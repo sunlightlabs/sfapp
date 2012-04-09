@@ -4,7 +4,7 @@ import urllib2
 
 from django.conf import settings
 from django.contrib import messages
-from django.http import HttpResponseNotAllowed, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseNotAllowed, HttpResponseRedirect
 from django.views.generic import View
 
 class SubscribeView(View):

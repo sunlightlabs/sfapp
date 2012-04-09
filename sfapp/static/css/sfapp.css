@@ -19,6 +19,8 @@ fieldset ul { padding-top: 2em; }
 .form-actions, .well { background-color: #eeebe1; }
 .btn-inverse { color: #C9A706; }
 
+.messages ul { list-style: none; margin: 0; padding: 0; }
+
 form input {
 	border: 2px solid #e7e4dc;
 	font-family: Georgia, 'Times New Roman', Times, serif;
