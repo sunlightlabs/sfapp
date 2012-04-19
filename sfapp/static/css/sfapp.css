@@ -17,7 +17,7 @@ fieldset ul { padding-top: 2em; }
 /* override bootstrap styles */
 
 .form-actions, .well { background-color: #eeebe1; }
-.btn-inverse { color: #C9A706; }
+.btn-inverse { color: #fdfcfb; }
 
 .messages ul { list-style: none; margin: 0; padding: 0; }
 
@@ -44,16 +44,9 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 .sf-header {
 	background: url(../img/sfapp_bg_header.jpg) center top repeat-x;
 	background-color: #b7d2ef;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 .sf-header .container { padding: 1.2em 0 0.4em 0; }
-.sf-header li { float: left; list-style: none; padding: 13px 35px 0 0; }
-.sf-header a {
-	text-decoration: none;
-	color: #494442;
-	text-transform: uppercase;
-	font-size: 90%;
-}
 .sf-header a.sf-logo {
 	background: url(../img/sfapp_logo.png) top left no-repeat;
 	display: block;
@@ -68,6 +61,9 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 .tip { margin-bottom: 20px;}
 
 .subscribe-thanks { display: none; }
+#sfapp-subscribe-form li { float: left; margin-right: 10px; }
+#zipCode input { width: 95px; }
+#email input { width: 140px; }
 
 .sf-footer { background: url(../img/bg_footerBorder.png) center top no-repeat; margin-top: 70px; padding-top: 50px; margin-bottom: 50px; color: #9f9a97;}
 .sf-footer h4 { color: #9f9a97; margin-bottom: 0.5em; }

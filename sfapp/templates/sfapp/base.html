@@ -35,14 +35,6 @@
 					<div class="span2">
         				<a class="sf-logo" href="http://www.sunlightfoundation.com">Sunlight Foundation</a>
 					</div>
-					<div class="span10">
-		        		<ul>
-		        			<li><a href="http://sunlightfoundation.com/about/">About</a></li>
-		        			<li><a href="http://sunlightfoundation.com/blog/">Blog</a></li>
-		        			<li><a href="http://sunlightfoundation.com/projects/">Projects</a></li>
-		        			<li><a href="http://sunlightfoundation.com/contact/">Contact</a></li>
-		        		</ul>
-					</div>
 				</div>
         	</div>
 		</div>
@@ -61,10 +53,11 @@
 		            <form action="/subscribe/" method="post" id="sfapp-subscribe-form">
 		            	{% csrf_token %}
 		            	<ul>
-		                	<li><input type="text" name="email" placeholder="your email address"></li>
-		                	<li><input type="text" name="zipcode" placeholder="your zip code"></li>
-		                	<li><button type="submit" class="btn btn-inverse"><i class="icon-envelope icon-white"></i> Sign Up</button></li>
+		                	<li id="email"><input type="text" name="email" placeholder="your email address"></li>
+		                	<li id="zipCode"><input type="text" name="zipcode" placeholder="your zip code"></li>
+		                	<li><button type="submit" class="btn btn-inverse">Sign Up</button></li>
 		                </ul>
+		                <div class="clear"></div>
 		            </form>
 				</div>
 				<div class="span5 terms">
