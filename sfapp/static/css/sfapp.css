@@ -17,15 +17,59 @@ fieldset ul { padding-top: 2em; }
 /* override bootstrap styles */
 
 .form-actions, .well { background-color: #eeebe1; }
-.btn-inverse { color: #fdfcfb; }
+
+.btn {
+	border: 3px solid #e9e8e3;
+	padding: 4px 15px 4px;
+	-webkit-border-radius: 6px;
+	   -moz-border-radius: 6px;
+	    -ms-border-radius: 6px;
+	     -o-border-radius: 6px;
+	        border-radius: 6px;
+}
+.btn:hover {
+	background-color: #ba5300;
+}
+.btn.active, .btn:active {
+	background-color: #ba5300;
+	background-color: #ba5300 \9;
+}
+
+.btn-sunlight {
+	color: #fdfcfb;
+	background-color: #ce6100;
+	background-image: -moz-linear-gradient(top, #ce6100, #222222);
+	background-image: -ms-linear-gradient(top, #ce6100, #222222);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ce6100), to(#222222));
+	background-image: -webkit-linear-gradient(top, #ce6100, #222222);
+	background-image: -o-linear-gradient(top, #ce6100, #222222);
+	background-image: linear-gradient(top, #ce6100, #222222);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce6100', endColorstr='#222222', GradientType=0);
+	border-color: #222222 #222222 #000000;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+.btn-sunlight:hover,
+.btn-sunlight:active,
+.btn-sunlight.active,
+.btn-sunlight.disabled,
+.btn-sunlight[disabled] {
+	background-color: #ce6100;
+}
+.btn-sunlight:active,
+.btn-sunlight.active {
+	background-color: #080808 \9;
+}
 
 .messages ul { list-style: none; margin: 0; padding: 0; }
 
-form input {
-	border: 2px solid #e7e4dc;
-	font-family: Georgia, 'Times New Roman', Times, serif;
+input,button,select,textarea {
+	font-family: "Georgia", "Times New Roman", "Times", serif;
 	font-style: oblique;
 }
+
+form input { border: 2px solid #e7e4dc; }
 form ul { list-style: none; margin: 0; padding: 0; }
 
 /* site-specific styles */
