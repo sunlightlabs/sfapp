@@ -60,6 +60,7 @@ textarea:focus {
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 	filter: progid:dximagetransform.microsoft.gradient(enabled=false);
 	font-style: normal;
+	text-shadow: 0 1px 1px rgba(186, 83, 0, 0.75);
 }
 .btn-sunlight:hover,
 .btn-sunlight:active,
