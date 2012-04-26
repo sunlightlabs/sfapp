@@ -130,18 +130,19 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 #sfapp-subscribe-form input[name=email] { width: 140px; }
 #sfapp-subscribe-form input[name=zipcode] { width: 95px; }
 
-.sf-footer { background: url(../img/bg_footerBorder.png) center top no-repeat; margin-top: 70px; padding-top: 50px; margin-bottom: 50px; color: #9f9a97;}
+.sf-footerWrapper { background-color: #fafaf7; border-top: 1px solid #ece9e9; margin-top: 70px; padding-top: 50px; min-height: 220px;}
+.sf-footer { color: #9f9a97;}
 .sf-footer h4 { color: #9f9a97; margin-bottom: 0.5em; }
 .sf-footer .tip { color: #9f9a97;}
 
 .sf-footer div.signup {
-	border-right: 1px solid #e8e6de;
+	border-right: 1px dashed #e8e6de;
 }
 
-.sf-footer div.terms p {
+.terms { margin-top: 30px;}
+.sf-footer div.terms p{
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 95%;
 	font-style: oblique;
 	line-height: 18px;
-	margin-top: 1em;
 }

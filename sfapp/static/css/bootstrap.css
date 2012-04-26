@@ -129,7 +129,7 @@ textarea {
   content: "";
 }
 
-.clearfix:after {
+.clearfix:after, .clear {
   clear: both;
 }
 
