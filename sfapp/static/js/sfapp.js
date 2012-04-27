@@ -11,8 +11,8 @@ $(document).ready(function() {
 		var params = {
 			csrfmiddlewaretoken: csrfToken,
 			email: email,
-			zipcode: zipcode,
-		}
+			zipcode: zipcode
+		};
 
 		$.post('/subscribe/', params, function(resp) {
 			var $p = $('<p>').text(resp.message).hide();
