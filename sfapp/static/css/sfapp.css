@@ -12,6 +12,8 @@ body {
 	margin-top: -9px;
 }
 
+.container { padding-left: 10px; padding-right: 10px;}
+
 a { color: #C9A706; }
 
 fieldset { margin-bottom: 3em; }
@@ -109,8 +111,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 	background: url(../img/sfapp_bg_header.jpg) center top repeat-x;
 	background-color: #b7d2ef;
 	margin-bottom: 60px;
+	height: 60px;
 }
-.sf-header .container { padding: 1.2em 0 0.4em 0; }
 .sf-header a.sf-logo {
 	background: url(../img/sfapp_logo.png) top left no-repeat;
 	display: block;
@@ -118,7 +120,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 	height: 40px;
 	margin-right: 30px;
 	text-indent: -9999px;
-	width: 150px;
+	width: 128px;
+	margin-top: 15px;
 }
 
 .tip, time { font-family: Georgia, 'Times New Roman', Times, serif; font-style: oblique; color: #6c6967; display: block; line-height: 21px;}
@@ -129,6 +132,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 #sfapp-subscribe-form li { float: left; margin-right: 10px; }
 #sfapp-subscribe-form input[name=email] { width: 140px; }
 #sfapp-subscribe-form input[name=zipcode] { width: 95px; }
+
+form label { font-weight: bold; }
+.form-horizontal label { float: left; width: 120px; }
+.form-horizontal input { clear: right;}
+.span6 input, .span7 input, .span5 input { width: 300px;} 
+
 
 .sf-footerWrapper { background-color: #fafaf7; border-top: 1px solid #ece9e9; margin-top: 70px; padding-top: 50px; min-height: 220px;}
 .sf-footer { color: #9f9a97;}
