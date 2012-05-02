@@ -24,6 +24,11 @@ fieldset ul { padding-top: 2em; }
  * override bootstrap styles
  */
 
+/* Fix for Google Maps image elements */
+.gmnoprint img, .gmnocsreen img {
+     max-width: none;
+}
+
 .form-actions, .well { background-color: #eeebe1; }
 
 input:focus,
