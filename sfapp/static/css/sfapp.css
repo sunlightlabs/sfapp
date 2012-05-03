@@ -97,6 +97,10 @@ ul.nav { margin-bottom: 0; }
 ul.nav li a { color: #222; }
 ul.nav li a:hover { background-color: inherit; color: #C9A706; }
 
+.subnav {
+    background-color: #E0E6EB;
+}
+
 /*
  * wrapper-specific styles
  */
@@ -139,9 +143,9 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 #sfapp-subscribe-form input[name=zipcode] { width: 95px; }
 
 form label { font-weight: bold; }
-.form-horizontal label { float: left; width: 120px; }
+/*.form-horizontal label { float: left; width: 120px; }*/
 .form-horizontal input { clear: right;}
-.span6 input, .span7 input, .span5 input { width: 300px;} 
+/*.span6 input, .span7 input, .span5 input { width: 300px;} */
 form li { margin-bottom: 15px;}
 
 .sf-footerWrapper { background-color: #fafaf7; border-top: 1px solid #ece9e9; margin-top: 70px; padding-top: 50px; min-height: 220px;}
@@ -149,10 +153,11 @@ form li { margin-bottom: 15px;}
 .sf-footer h4 { color: #9f9a97; margin-bottom: 0.5em; }
 .sf-footer .tip { color: #9f9a97;}
 
-.sf-footer div.signup {
+.span-divider {
     border-right: 1px dashed #e8e6de;
     margin-right: -1px;
 }
+
 
 .terms { 
     margin-top: 30px;
