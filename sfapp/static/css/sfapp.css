@@ -91,6 +91,7 @@ input,button,select,textarea {
 }
 
 form input, form select { border: 2px solid #e7e4dc; }
+form select { padding: 3px 4px; }
 form ul { list-style: none; margin: 0; padding: 0; }
 
 ul.nav { margin-bottom: 0; }
