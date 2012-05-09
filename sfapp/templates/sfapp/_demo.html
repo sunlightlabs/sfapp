@@ -1,14 +1,81 @@
 {% extends "sfapp/base-sidebar.html" %}
 
+
 {% block content %}
-	<h1>Project Logo Header (h1)</h1>
-	<h2>Primary Header (h2)</h2>
-	<h3>Subhead (h3)</h3>
-	<h4>Sub-subhead (h4)</h4>
-	<h5>Sub-sub-subhead (h5)</h5>
-	<p>Main content area (.content)</p>
+    <header>
+        <h1>Project Logo Header (h1)</h1>
+    	<nav class="subnav">
+            <ul class="nav nav-pills">
+                <li>
+                    <a href="#map">Find Stations</a>
+                </li>
+                <li>
+                    <a href="#get_involved">Get Involved</a>
+                </li>
+                <li>
+                    <a href="#feedback">Questions</a>
+                </li>
+            </ul>        
+        </nav>
+    </header>
+    <div class="module">
+        <h2>Who’s trying to influence your vote? <br /> Help us find out!</h2>
+        <div class="featureText">
+            <p>New campaign finance rules mean that the airwaves this election year will be dominated by outside groups, many of whom don’t have to disclose the sources of their funding and don’t even have to register with the Federal Election Commission. But there is one place where they will leave a paper trail: At the TV stations where they buy their ads. For the first time, the Federal Communication Commission (FCC) has ruled to require television stations in the top 50 media markets to put their public and political files online. These files contain information on political ad spending which are crucial to the public interest. But the top 50 media markets cover only a fraction of the swing states, where the majority of political ad spending will occur. We need your help to unlock the rest of the political files and post the information online.</p>
+            <p>Sunlight Foundation in partnership with Free Press, New America Foundation and other coalition members are working with our members, volunteers, journalists and allies across the country to inspect political files and post our findings online. As a pilot project, we will focus on Wisconsin’s gubernatorial election on June 5th. <span class="textCallout">Sign up for a training or search for a tv station near you.</span></p>
+        </div>
+    </div>
+    
+    <form id='action_signup' class='form-horizontal' action="/broadcasters/action_signup/" method="post" accept-charset="utf-8">
+            <ul>
+                <li>
+                        <label>Email:</label>
+                        <input type="email" name="email" value="" placeholder="Email" required="required">
+                </li>
+                <li>
+                    <label>First Name:</label>
+                    <input type="text" name="firstname" value="" placeholder="First Name" id="firstname">
+                </li>
+                <li>
+                    <label>Last Name:</label>
+                    <input type="text" name="lastname" value="" id="lastname" placeholder="Last Name">
+                </li>
+                <li>
+                    <label>Phone:</label>
+                    <input type="text" name="phone" value="" placeholder="Phone" id="phone">
+                </li>
+                <li>
+                    <label>Callsign:</label>
+                    <select name="custom-1093" id="station" size="1"></select>
+                </li>
+                <li>
+                    <label>Share with Free Press: </label>
+                    <label class="tip asInput"><input class="checkbox" type="checkbox" name="custom-1116" id="optin" checked="checked" />Yes, I would like to receive email alerts from Free Press</label>
+                </li>
+                <li>
+                    <input type="submit" class="btn" value="Sign up &rarr;">
+                    
+                </li>
+                </ul>
+            </form>
+	
+
+    
 {% endblock %}
 
 {% block sidebar %}
 	<p>Sidebar (.sidebar)</p>
+	<div class='boxCallout resources'>
+           <h3>Resources</h3>
+           <ul class='bulletList unstyled'>
+               <li>
+                   <h5 class="withTip">How to inspect public political files</h5>
+                   <p>This <a href='http://www.freepress.net/how-to-inspect-public-political-files'>handy how-to guide</a> provides step-by-step information on how to free the files from your local broadcaster. (<a href="http://www.freepress.net/files/publicfiles-howto.pdf">pdf version</a>)</p>
+               </li>
+               <li>
+                   <h5 class="withTip" >Public Files Inspection Checklist</h5>
+                   <p>Ready to go to the station? <a href='http://www.freepress.net/files/publicfiles-checklist.pdf'>Print this checklist</a> and the <a href='/static/files/FCC_public_files_excerpt.pdf'>political files excerpt</a> from FCC’s manual and bring it with you.</p>
+               </li>
+           </ul>
+       </div>
 {% endblock %}
