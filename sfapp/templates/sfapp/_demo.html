@@ -1,4 +1,4 @@
-{% extends "sfapp/base-sidebar.html" %}
+{% extends "sfapp/base-full.html" %}
 
 
 {% block content %}
@@ -18,12 +18,16 @@
             </ul>        
         </nav>
     </header>
-    <div class="module">
-        <h2>Who’s trying to influence your vote? <br /> Help us find out!</h2>
-        <div class="featureText">
+    <div class="module hero-unit">
+        <div class="span7">
+            <h2>Who’s trying to influence your vote? <br /> Help us find out!</h2>
             <p>New campaign finance rules mean that the airwaves this election year will be dominated by outside groups, many of whom don’t have to disclose the sources of their funding and don’t even have to register with the Federal Election Commission. But there is one place where they will leave a paper trail: At the TV stations where they buy their ads. For the first time, the Federal Communication Commission (FCC) has ruled to require television stations in the top 50 media markets to put their public and political files online. These files contain information on political ad spending which are crucial to the public interest. But the top 50 media markets cover only a fraction of the swing states, where the majority of political ad spending will occur. We need your help to unlock the rest of the political files and post the information online.</p>
             <p>Sunlight Foundation in partnership with Free Press, New America Foundation and other coalition members are working with our members, volunteers, journalists and allies across the country to inspect political files and post our findings online. As a pilot project, we will focus on Wisconsin’s gubernatorial election on June 5th. <span class="textCallout">Sign up for a training or search for a tv station near you.</span></p>
         </div>
+        <div class="span4">
+            
+        </div>
+        <div class="clearfix"></div>
     </div>
     
     <form id='action_signup' class='form-horizontal' action="/broadcasters/action_signup/" method="post" accept-charset="utf-8">
@@ -58,7 +62,62 @@
                 </li>
                 </ul>
             </form>
+	<h3 class="withTip">Find Nearby Stations in Wisconsin</h3>
+	<p class="tip">Find stations near you! Use this form to search for TV stations within a search radius. This will return a list of stations ordered by distance (as the crow flies). Actual driving distance will vary.</p>
 	
+	
+	<ul>
+	    <li>
+	        <h5 class="withTip">WISN-TV</h5>
+	        <dl class="smallModule floatedList">
+	            <dt>Network:</dt>
+	            <dd>ABC</dd>
+	            
+	            <dt>Channel:</dt>
+	            <dd>34</dd>
+	        </dl>    
+	        <address class="vcard">
+                <span class="adr">
+                    <span class="street-address">759 N. 19th Street</span>
+                    <span class="locality">Milwaukee</span>,
+                    <span class="region" title="Wisconsin">WI</span>
+                    <span class="postal-code">52333</span>
+                </span>
+            </address>
+	    </li>
+	</ul>    
+	
+	
+	<form id="map_form" class="form-inline formStacked boxCallout" action="#map_form" method="get" accept-charset="utf-8">
+	    <ul>
+	        <li>
+                <label>Address</label>
+                <input type="text" name="address" id="address" class="span4" value="" placeholder="Street Address" required="required" size="75">
+            </li>
+            <li>
+                <label>City</label>
+                <input type="text" class="input-medium" name="city" placeholder="City" value="" id="city">
+            </li>
+            <li>
+                <label class="hidden">State</label>
+                <label>Wisconsin</label>
+            </li>    
+            <li>    
+                <label>Radius</label>
+                <select name="radius" id="radius" class="span2">
+                    <option value="10">10 miles</option>
+                    <option value="25" selected="">25 miles</option>
+                    <option value="50">50 miles</option>
+                    <option value="100">100 miles</option>
+                    <option value="200">200 miles</option>
+                </select>
+            <li>
+            <li>
+                <button class="btn">Search</button>
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+    </form>
 
     
 {% endblock %}
