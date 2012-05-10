@@ -129,7 +129,7 @@ textarea {
   content: "";
 }
 
-.clearfix:after, .clear {
+.clearfix:after {
   clear: both;
 }
 
@@ -185,7 +185,10 @@ a:hover {
   clear: both;
 }
 
-[class*="span"] { float: left; }
+[class*="span"] {
+  float: left;
+  margin-left: 20px;
+}
 
 .container,
 .navbar-fixed-top .container,
@@ -198,43 +201,43 @@ a:hover {
 }
 
 .span11 {
-  width: 835px;
+  width: 860px;
 }
 
 .span10 {
-  width: 755px;
+  width: 780px;
 }
 
 .span9 {
-  width: 675px;
+  width: 700px;
 }
 
 .span8 {
-  width: 595px;
+  width: 620px;
 }
 
 .span7 {
-  width: 515px;
+  width: 540px;
 }
 
 .span6 {
-  width: 435px;
+  width: 460px;
 }
 
 .span5 {
-  width: 355px;
+  width: 380px;
 }
 
 .span4 {
-  width: 275px;
+  width: 300px;
 }
 
 .span3 {
-  width: 195px;
+  width: 220px;
 }
 
 .span2 {
-  width: 115px;
+  width: 140px;
 }
 
 .span1 {
