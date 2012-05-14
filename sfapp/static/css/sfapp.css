@@ -143,10 +143,10 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 .moduleSm { margin-bottom}
 
 .textCallout { background:#CA5703; color: #fff;}
-.boxCallout { background-color: #f9f8f8; border: 1px solid #f0eded; padding: 25px 15px; margin-bottom: 40px; text-align: center;}
+.boxCallout { background-color: #f9f8f8; border: 1px solid #f0eded; padding: 25px 15px; text-align: center;}
 .boxCallout li { text-align: left;}
 
-.tip, time { font-family: Georgia, 'Times New Roman', Times, serif; font-style: oblique; color: #6c6967; display: block; line-height: 21px;}
+.tip, time { font-family: Georgia, 'Times New Roman', Times, serif; font-style: oblique; color: #6c6967; display: block; line-height: 21px; max-width: 600px;}
 .tip { margin-bottom: 20px;}
 .withTip { margin-bottom: 5px;}
 .textReplace { display: block; text-indent: -9999em; }
@@ -155,7 +155,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 
 .bulletList li { background: url(../img/bg_list.png) left 6px no-repeat; padding-left: 15px; margin-bottom: 25px; }
 .formStacked label, .formStacked input { display: block;}
-.formStacked li { float: left; margin-right: 20px; margin-bottom: 0px;}
+.formStacked li { float: left; margin-right: 20px; margin-bottom: 10px;}
+.formStacked { padding: 15px; margin-bottom: 0;}
 .formStacked button { margin-top: 20px;}
 
 .floatList li { float: left; margin-right: 15px;}
