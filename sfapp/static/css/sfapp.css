@@ -149,6 +149,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 .tip, time { font-family: Georgia, 'Times New Roman', Times, serif; font-style: oblique; color: #6c6967; display: block; line-height: 21px;}
 .tip { margin-bottom: 20px;}
 .withTip { margin-bottom: 5px;}
+.textReplace { display: block; text-indent: -9999em; }
 
 .subscribe-thanks { display: none; }
 
@@ -156,6 +157,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 .formStacked label, .formStacked input { display: block;}
 .formStacked li { float: left; margin-right: 20px;}
 .formStacked button { margin-top: 20px;}
+
+.floatList { float: left; margin-right: 15px;}
 
 .floatedList { padding-bottom: 10px; margin-top: 0;}
 .floatedList dt { float: left; margin-right: 5px; }
