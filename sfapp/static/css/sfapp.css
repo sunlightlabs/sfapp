@@ -161,7 +161,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 
 .floatList li { float: left; margin-right: 15px;}
 
-.withLine li { border-bottom: 1px solid #EFEFEF; padding: 10px 5px 7px;}
+.withLine li { border-bottom: 1px solid #EFEFEF; padding: 15px 5px 5px;}
 
 .floatedList { padding-bottom: 10px; margin-top: 0;}
 .floatedList dt { float: left; margin-right: 5px; }
