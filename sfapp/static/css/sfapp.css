@@ -131,7 +131,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
     margin-top: 15px;
 }
 
-.subnav { padding-bottom: 10px; margin-bottom: 40px; border-bottom: 1px solid #D6D3D2; }
+.subnav { padding-bottom: 10px; margin-bottom: 40px; border-bottom: 1px solid #D6D3D2; width: 100%;}
 .subnav li.active { margin-top: -5px; background-color: white; border-left: 1px solid #EEEDEC; border-top: 1px solid #EEEDEC; border-right: 1px solid #EEEDEC; padding-bottom: 20px; padding-top: 15px; -moz-border-radius-bottomright: 0px; -webkit-border-bottom-right-radius: 0px; -moz-border-radius-bottomleft: 0px; -webkit-border-bottom-left-radius: 0px;}
 .subnav li { padding: 10px 20px; background-color: #78716F; -moz-border-radius: 10px; -webkit-border-radius: 10px; margin-right: 10px;}
 .subnav a:link, .subnav a:active, .subnav a:visited  { color: #EFEBE9; font-size: 115%;}
@@ -155,10 +155,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 
 .bulletList li { background: url(../img/bg_list.png) left 6px no-repeat; padding-left: 15px; margin-bottom: 25px; }
 .formStacked label, .formStacked input { display: block;}
-.formStacked li { float: left; margin-right: 20px;}
+.formStacked li { float: left; margin-right: 20px; margin-bottom: 0px;}
 .formStacked button { margin-top: 20px;}
 
 .floatList li { float: left; margin-right: 15px;}
+
+.withLine li { border-bottom: 1px solid #EFEFEF; padding: 10px 5px 7px;}
 
 .floatedList { padding-bottom: 10px; margin-top: 0;}
 .floatedList dt { float: left; margin-right: 5px; }
