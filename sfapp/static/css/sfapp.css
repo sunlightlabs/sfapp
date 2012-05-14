@@ -145,7 +145,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 .boxCallout { background-color: #f9f8f8; border: 1px solid #f0eded; padding: 25px 15px; text-align: center;}
 .boxCallout li { text-align: left;}
 
-.tip, time { font-family: Georgia, 'Times New Roman', Times, serif; font-style: oblique; color: #6c6967; display: block; line-height: 21px; max-width: 600px;}
+.tip, time { font-family: Georgia, 'Times New Roman', Times, serif; font-style: oblique; color: #97928f; display: block; line-height: 21px; max-width: 600px;}
 .tip { margin-bottom: 20px;}
 .withTip { margin-bottom: 5px;}
 .textReplace { display: block; text-indent: -9999em; }
@@ -154,7 +154,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 
 .bulletList li { background: url(../img/bg_list.png) left 6px no-repeat; padding-left: 15px; margin-bottom: 25px; }
 .formStacked label, .formStacked input { display: block;}
-.formStacked li { float: left; margin-right: 20px; margin-bottom: 10px;}
+.formStacked li { float: left; margin-right: 20px; margin-bottom: 15px; margin-left: 0;}
+.module .formStacked input { width: 95%;}
 .formStacked { padding: 15px; margin-bottom: 0;}
 .formStacked button { margin-top: 20px;}
 
@@ -164,7 +165,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 
 .floatedList { padding-bottom: 10px; margin-top: 0;}
 .floatedList dt { float: left; margin-right: 5px; }
-.floatedList dd { float: left; margin-right: 25px; }
+.floatedList dd { float: left; margin-right: 15px; margin-left: 0; }
 .street-address { display: block;}
 
 #sfapp-subscribe-form li { float: left; margin-right: 10px; }
@@ -178,7 +179,7 @@ form label { font-family: Georgia, "Times New Roman", Times, serif; font-size: 1
 .form-horizontal input { clear: right;}
 /*.span6 input, .span7 input, .span5 input { width: 300px;} */
 form li { margin-bottom: 15px;}
-.content .checkbox { width: 15px; margin-right: 10px;}
+.container .content .checkbox { width: 15px; margin-right: 10px; float: left; margin-top: 5px;}
 
 .sf-footerWrapper { background-color: #fafaf7; border-top: 1px solid #ece9e9; margin-top: 70px; padding-top: 50px; min-height: 220px;}
 .sf-footer { color: #9f9a97;}
@@ -191,6 +192,7 @@ form li { margin-bottom: 15px;}
 }
 
 .hero-unit { padding: 40px; border: 1px solid #d6d3d3; border-radius: 0;}
+.withBorder { border: 1px solid #F0EDED; }
 
 .terms { 
     margin-top: 30px;
