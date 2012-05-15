@@ -139,7 +139,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 .subnav li:hover { background-color: #5B5553;}
 
 .module { margin-bottom: 60px;}
-.moduleSm { margin-bottom}
+.content .moduleSm { margin-bottom: 5px; padding-bottom: 0;}
 
 .textCallout { background:#CA5703; color: #fff;}
 .boxCallout { background-color: #f9f8f8; border: 1px solid #f0eded; padding: 25px 15px; text-align: center;}
