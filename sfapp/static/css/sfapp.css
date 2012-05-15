@@ -99,6 +99,13 @@ ul.nav { margin-bottom: 0; }
 ul.nav li a { color: #222; }
 ul.nav li a:hover { background-color: inherit; color: #C9A706; }
 
+.nav i { margin-top: 2px; padding-right: 5px;}
+.listNav { float: right; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 120%; }
+.listNav li { border-left: 1px solid #b7b2b0; margin-left: 20px; padding-left: 20px; float: right; }
+.listNav .first { border: none; }
+.listNav a:link, .listNav a:active, .listNav a:visited { color: #76716E; padding-bottom: 2px;}
+.listNav a:hover { border-bottom: 1px dotted #C9A706; text-decoration: none;}
+
 /*
  * wrapper-specific styles
  */
