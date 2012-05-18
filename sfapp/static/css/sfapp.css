@@ -159,22 +159,27 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 
 .subscribe-thanks { display: none; }
 
-.bulletList li { background: url(../img/bg_list.png) left 6px no-repeat; padding-left: 15px; margin-bottom: 25px; }
-.formStacked label, .formStacked input { display: block;}
-.formStacked li { float: left; margin-right: 20px; margin-bottom: 15px; margin-left: 0;}
-.module .formStacked input { width: 95%;}
-.formStacked { padding: 15px; margin-bottom: 0;}
-.formStacked button { margin-top: 20px;}
+.slf-list { padding-left: 15px; margin: 0;}
+.slf-list li { list-style-image: url(../img/bg_list.png); margin-bottom: 25px; }
+
+.form-inline li { float: left; display:inline; margin-right: 20px; margin-bottom: 15px; margin-left: 0;}
+.form-inline li.last, .form-inline li:last-child { margin-right: 0; }
+.form-inline label, .form-inline input { display: block;}
+.form-inline button { margin-top: 20px;}
+.module .form-vertical input { width: 95%;}
+.form-vertical { margin-bottom: 0;}
 
 .floatList li { float: left; margin-right: 15px;}
 
 .withLine li { border-bottom: 1px solid #EFEFEF; padding: 15px 5px 5px;}
 
+.street-address { display: block;}
+
+dl {margin: 0;}
+dd { margin-bottom: 25px;}
 .floatedList { padding-bottom: 10px; margin-top: 0;}
 .floatedList dt { float: left; margin-right: 5px; margin-bottom: 0;}
 .floatedList dd { float: left; margin-right: 15px; margin-left: 0; margin-bottom: 0;}
-.street-address { display: block;}
-dd { margin-bottom: 25px;}
 
 #sfapp-subscribe-form li { float: left; margin-right: 10px; }
 #sfapp-subscribe-form input[name=email] { width: 140px; }
