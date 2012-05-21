@@ -111,10 +111,10 @@ ul.nav li a:hover { background-color: inherit; color: #C9A706; }
  * wrapper-specific styles
  */
 
-h1, h2, h3, h4 { font-weight: normal; color: #635f5c; max-width: 580px;}
+h1, h2, h3, h4, legend { font-weight: normal; color: #635f5c; max-width: 580px;}
 h1 { font-family: Georgia, 'Times New Roman', Times, serif; font-size: 270%; line-height: 30px; margin-bottom: 30px;}
-h2 { margin-bottom: 30px; font-size: 260%; line-height: 38px; }
-h3, .h2 { font-family: Georgia, "Times New Roman", Times, serif; margin-bottom: 25px; font-size: 210%; line-height: 29px; text-transform: capitalize; }
+h2 { margin-bottom: 30px; font-size: 260%; line-height: 38px; text-transform: uppercase;}
+h3, .h2, legend { font-family: Georgia, "Times New Roman", Times, serif; margin-bottom: 25px; font-size: 210%; line-height: 29px; text-transform: capitalize; }
 h4, .h3 { font-size: 170%; margin-bottom: 20px; line-height: 27px; text-transform: capitalize; font-family: Georgia, 'Times New Roman', Times, serif;}
 h5, .h4 { font-weight: bold; margin-bottom: 20px; font-size: 140%; line-height: 22px; text-transform: capitalize;}
 h6, .h5 { font-weight: bold; font-size: 125%; margin-bottom: 15px; text-transform: capitalize;}
@@ -153,10 +153,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 .boxCallout { background-color: #f9f8f8; border: 1px solid #f0eded; padding: 25px 15px; text-align: center;}
 .boxCallout li { text-align: left;}
 
-.tip, time { font-family: Georgia, 'Times New Roman', Times, serif; font-style: oblique; color: #97928f; display: block; line-height: 21px; max-width: 600px;}
+.tip, time { font-family: Georgia, 'Times New Roman', Times, serif; font-style: oblique; color: #97928f; display: block; line-height: 21px; max-width: 680px;}
 .tip { margin-bottom: 20px;}
 .withTip { margin-bottom: 5px;}
 .textReplace { display: block; text-indent: -9999em; }
+
+.pushInward { margin-left: 25px;}
 
 .viewMore { font-family: Georgia, 'Times New Roman', Times, serif; font-style: oblique; font-size: 115%; margin-top: 20px; display: block;} 
 
@@ -185,7 +187,9 @@ dd { margin-bottom: 25px; }
 .floatedList dt { float: left; margin-right: 5px; margin-bottom: 0; }
 .floatedList dd { float: left; margin-right: 15px; margin-left: 0; margin-bottom: 0; }
 
-/*#sfapp-subscribe-form li { float: left; margin-right: 10px; }*/
+legend { padding-bottom: 5px;}
+
+#sfapp-subscribe-form li { float: left; margin-right: 10px; }
 #sfapp-subscribe-form input[name=email] { width: 140px; }
 #sfapp-subscribe-form input[name=zipcode] { width: 95px; }
 
@@ -202,14 +206,14 @@ dd { margin-bottom: 25px; }
 #youTube a:hover { background: url(../img/social_sprites.png) left -86px no-repeat;}
 
 form label { font-family: Georgia, "Times New Roman", Times, serif; font-size: 110%; }
+
+.span6 input, .span7 input, .span5 input, .span8 input, .content .form-horizontal .asInput, .span6 textarea, .span7 textarea, .span5 textarea, .span8 textarea, .span6 select, .span7 select, .span5 select, .span8 select { width: 300px; font-weight: normal;}
 .content .form-horizontal label { float: left; width: 160px; text-align: left; padding-top: 5px;}
-.span6 input, .span7 input, .span5 input, .span8 input, .content .form-horizontal .asInput { width: 300px; font-weight: normal;}
-input[type=checkbox] { width: auto; }
-/*.form-horizontal label { float: left; width: 120px; }*/
 .form-horizontal input { clear: right;}
-/*.span6 input, .span7 input, .span5 input { width: 300px;} */
-form li { margin-bottom: 15px;}
-/*.container .content .checkbox { width: 15px; margin-right: 10px; float: left; margin-top: 5px;}*/
+form li { margin-bottom: 15px; }
+input[type=checkbox] { width: auto; }
+.container .content .checkbox input { width: 15px; margin-right: 10px; float: left; margin-top: 5px;}
+.normalList li { clear: both;}
 
 .sf-footerWrapper { background-color: #fafaf7; border-top: 1px solid #ece9e9; margin-top: 70px; padding-top: 50px; min-height: 220px;}
 .sf-footer { color: #9f9a97;}
