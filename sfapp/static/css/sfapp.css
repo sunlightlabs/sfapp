@@ -158,6 +158,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 .withTip { margin-bottom: 5px;}
 .textReplace { display: block; text-indent: -9999em; }
 
+.viewMore { font-family: Georgia, 'Times New Roman', Times, serif; font-style: oblique; font-size: 115%; margin-top: 20px; display: block;} 
+
 .subscribe-thanks { display: none; }
 
 .slf-list { padding-left: 15px; margin: 0;}
@@ -186,6 +188,18 @@ dd { margin-bottom: 25px; }
 /*#sfapp-subscribe-form li { float: left; margin-right: 10px; }*/
 #sfapp-subscribe-form input[name=email] { width: 140px; }
 #sfapp-subscribe-form input[name=zipcode] { width: 95px; }
+
+#shareBtns { float: right; clear: right; margin-top: -30px;}
+#shareBtns li { width: 16px; height: 16px; float: right; margin-right: 10px;}
+#shareBtns li a { width: 16px; height: 16px; }
+#facebook a { background: url(../img/social_sprites.png) left -188px no-repeat;}
+#facebook a:hover { background: url(../img/social_sprites.png) left -52px no-repeat;}
+#twitter a { background: url(../img/social_sprites.png) left -103px no-repeat;}
+#twitter a:hover { background: url(../img/social_sprites.png) left -1px no-repeat;}
+#twitter a { background: url(../img/social_sprites.png) left -103px no-repeat;}
+#twitter a:hover { background: url(../img/social_sprites.png) left -1px no-repeat;}
+#youTube a { background: url(../img/social_sprites.png) left -137px no-repeat;}
+#youTube a:hover { background: url(../img/social_sprites.png) left -86px no-repeat;}
 
 form label { font-family: Georgia, "Times New Roman", Times, serif; font-size: 110%; }
 .content .form-horizontal label { float: left; width: 160px; text-align: left; padding-top: 5px;}
