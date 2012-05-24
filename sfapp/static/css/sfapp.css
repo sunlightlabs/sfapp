@@ -94,6 +94,7 @@ input,button,select,textarea { font-family: "Georgia", "Times New Roman", "Times
 form input, form select { border: 2px solid #e7e4dc; }
 form select { padding: 3px 4px; }
 form ul { list-style: none; margin: 0; padding: 0; }
+form li { clear: both; }
 
 ul.nav { margin-bottom: 0; }
 ul.nav li a { color: #222; }
@@ -164,8 +165,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 
 .form-inline li { float: left; display:inline; margin-right: 20px; margin-bottom: 15px; margin-left: 0;}
 .form-inline li.last, .form-inline li:last-child { margin-right: 0; }
-.form-inline label, .form-inline input { display: block;}
-.form-inline button { margin-top: 20px;}
+/*.form-inline button { margin-top: 20px;}*/
 .module .form-vertical input { width: 95%;}
 .form-vertical { margin-bottom: 0;}
 
@@ -173,20 +173,20 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 
 .withLine li { border-bottom: 1px solid #EFEFEF; padding: 15px 5px 5px;}
 
-.street-address { display: block;}
+.street-address { display: block; }
 
-dl {margin: 0;}
-dd { margin-bottom: 25px;}
-.floatedList { padding-bottom: 10px; margin-top: 0;}
-.floatedList dt { float: left; margin-right: 5px; margin-bottom: 0;}
-.floatedList dd { float: left; margin-right: 15px; margin-left: 0; margin-bottom: 0;}
+dl { margin: 0; }
+dd { margin-bottom: 25px; }
+.floatedList { padding-bottom: 10px; margin-top: 0; }
+.floatedList dt { float: left; margin-right: 5px; margin-bottom: 0; }
+.floatedList dd { float: left; margin-right: 15px; margin-left: 0; margin-bottom: 0; }
 
-#sfapp-subscribe-form li { float: left; margin-right: 10px; }
+/*#sfapp-subscribe-form li { float: left; margin-right: 10px; }*/
 #sfapp-subscribe-form input[name=email] { width: 140px; }
 #sfapp-subscribe-form input[name=zipcode] { width: 95px; }
 
 form label { font-family: Georgia, "Times New Roman", Times, serif; font-size: 110%; }
-.content .form-horizontal label { float: left; width: 120px; text-align: left; padding-top: 5px;}
+.content .form-horizontal label { float: left; width: 160px; text-align: left; padding-top: 5px;}
 .span6 input, .span7 input, .span5 input, .span8 input, .content .form-horizontal .asInput { width: 300px; font-weight: normal;} 
 /*.form-horizontal label { float: left; width: 120px; }*/
 .form-horizontal input { clear: right;}
