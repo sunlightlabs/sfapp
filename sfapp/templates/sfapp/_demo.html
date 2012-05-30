@@ -15,7 +15,7 @@
                 <li>
                     <a href="#feedback">Questions</a>
                 </li>
-            </ul>        
+            </ul>
         </nav>
     </header>
     <div class="module hero-unit">
@@ -25,12 +25,12 @@
             <p>Sunlight Foundation in partnership with Free Press, New America Foundation and other coalition members are working with our members, volunteers, journalists and allies across the country to inspect political files and post our findings online. As a pilot project, we will focus on Wisconsin’s gubernatorial election on June 5th. <span class="textCallout">Sign up for a training or search for a tv station near you.</span></p>
         </div>
         <div class="span4">
-            
+
         </div>
         <div class="clearfix"></div>
     </div>
-    
-    <form id='action_signup' class='form-horizontal' action="/broadcasters/action_signup/" method="post" accept-charset="utf-8">
+
+    <form id='action_signup' class='form-vertical' action="/broadcasters/action_signup/" method="post" accept-charset="utf-8">
             <ul>
                 <li>
                         <label>Email:</label>
@@ -58,24 +58,24 @@
                 </li>
                 <li>
                     <input type="submit" class="btn" value="Sign up &rarr;">
-                    
+
                 </li>
                 </ul>
             </form>
 	<h3 class="withTip">Find Nearby Stations in Wisconsin</h3>
 	<p class="tip">Find stations near you! Use this form to search for TV stations within a search radius. This will return a list of stations ordered by distance (as the crow flies). Actual driving distance will vary.</p>
-	
-	
+
+
 	<ul>
 	    <li>
 	        <h5 class="withTip">WISN-TV</h5>
 	        <dl class="smallModule floatedList">
 	            <dt>Network:</dt>
 	            <dd>ABC</dd>
-	            
+
 	            <dt>Channel:</dt>
 	            <dd>34</dd>
-	        </dl>    
+	        </dl>
 	        <address class="vcard">
                 <span class="adr">
                     <span class="street-address">759 N. 19th Street</span>
@@ -85,10 +85,11 @@
                 </span>
             </address>
 	    </li>
-	</ul>    
-	
-	
-	<form id="map_form" class="form-vertical formStacked boxCallout" action="#map_form" method="get" accept-charset="utf-8">
+	</ul>
+
+
+    <!-- This is a demo of a compact inline form -->
+	<form id="map_form" class="form-inline compact boxCallout" action="#map_form" method="get" accept-charset="utf-8">
 	    <ul>
 	        <li>
                 <label>Address</label>
@@ -101,8 +102,8 @@
             <li>
                 <label class="hidden">State</label>
                 <label>Wisconsin</label>
-            </li>    
-            <li>    
+            </li>
+            <li>
                 <label>Radius</label>
                 <select name="radius" id="radius" class="span2">
                     <option value="10">10 miles</option>
@@ -119,7 +120,7 @@
         <div class="clearfix"></div>
     </form>
 
-    
+
 {% endblock %}
 
 {% block sidebar %}

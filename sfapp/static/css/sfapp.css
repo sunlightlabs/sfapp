@@ -24,7 +24,7 @@ fieldset ul { padding-top: 2em; }
  * override bootstrap styles
  */
 
-::selection { background:#CA5703; color:#fff; text-shadow: none; } 
+::selection { background:#CA5703; color:#fff; text-shadow: none; }
 
 
 /* Fix for Google Maps image elements */
@@ -163,9 +163,11 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 .slf-list { padding-left: 15px; margin: 0;}
 .slf-list li { list-style-image: url(../img/bg_list.png); margin-bottom: 25px; }
 
-.form-inline li { float: left; display:inline; margin-right: 20px; margin-bottom: 15px; margin-left: 0;}
+.form-inline li { float: left; display:inline; margin-right: 20px; margin-bottom: 15px; margin-left: 0; clear: none;}
 .form-inline li.last, .form-inline li:last-child { margin-right: 0; }
-/*.form-inline button { margin-top: 20px;}*/
+.form-inline li button { margin-top: 20px;}
+.form-inline.compact label, .form-inline.compact input { display: block;}
+
 .module .form-vertical input { width: 95%;}
 .form-vertical { margin-bottom: 0;}
 
@@ -187,7 +189,7 @@ dd { margin-bottom: 25px; }
 
 form label { font-family: Georgia, "Times New Roman", Times, serif; font-size: 110%; }
 .content .form-horizontal label { float: left; width: 160px; text-align: left; padding-top: 5px;}
-.span6 input, .span7 input, .span5 input, .span8 input, .content .form-horizontal .asInput { width: 300px; font-weight: normal;} 
+.span6 input, .span7 input, .span5 input, .span8 input, .content .form-horizontal .asInput { width: 300px; font-weight: normal;}
 /*.form-horizontal label { float: left; width: 120px; }*/
 .form-horizontal input { clear: right;}
 /*.span6 input, .span7 input, .span5 input { width: 300px;} */
@@ -207,7 +209,7 @@ form li { margin-bottom: 15px;}
 .hero-unit { padding: 40px; border: 1px solid #d6d3d3; border-radius: 0;}
 .withBorder { border: 1px solid #F0EDED; }
 
-.terms { 
+.terms {
     margin-top: 30px;
 }
 
