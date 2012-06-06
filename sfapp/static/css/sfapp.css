@@ -165,7 +165,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 
 .form-inline li { float: left; display:inline; margin-right: 20px; margin-bottom: 15px; margin-left: 0; clear: none;}
 .form-inline li.last, .form-inline li:last-child { margin-right: 0; }
-.form-inline li button { margin-top: 20px;}
+.form-inline.compact li button { margin-top: 20px;}
 .form-inline.compact label, .form-inline.compact input { display: block;}
 
 .module .form-vertical input { width: 95%;}
