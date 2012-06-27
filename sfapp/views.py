@@ -9,29 +9,29 @@ from django.views.generic import View
 
 class SubscribeView(View):
 
-	bsd_url = getattr(settings, 'BSD_URL', 'http://bsd.sunlightfoundation.com/page/s/sfc')
-	success_message = 'Thanks for registering!'
-	
-	def get(self, request, *args, **kwargs):
-		return HttpResponseNotAllowed(('POST',))
+    bsd_url = getattr(settings, 'BSD_URL', 'http://bsd.sunlightfoundation.com/page/s/sfc')
+    success_message = 'Thanks for registering!'
 
-	def post(self, request, *args, **kwargs):
+    def get(self, request, *args, **kwargs):
+        return HttpResponseNotAllowed(('POST',))
 
-		email = request.POST.get("email", "")
-		zipcode = request.POST.get("zipcode", "")
+    def post(self, request, *args, **kwargs):
 
-		if email:
+        email = request.POST.get("email", "")
+        zipcode = request.POST.get("zipcode", "")
 
-			self.bsd_url += "?source=%s" % request.build_absolute_uri()
+        if email:
 
-			params = {"email": email, "zip": zipcode}
-			response = urllib2.urlopen(self.bsd_url, urllib.urlencode(params)).read()
+            self.bsd_url += "?source=%s" % request.build_absolute_uri()
 
-		if request.is_ajax():
-			resp = {'message': self.success_message}
-			return HttpResponse(json.dumps(resp), content_type='application/json')
+            params = {"email": email, "zip": zipcode}
+            response = urllib2.urlopen(self.bsd_url, urllib.urlencode(params)).read()
 
-		messages.success(request, self.success_message)
-		referrer = request.META.get('HTTP_REFERER', None)
+        if request.is_ajax():
+            resp = {'message': self.success_message}
+            return HttpResponse(json.dumps(resp), content_type='application/json')
 
-		return HttpResponseRedirect(referrer or '/')
+        messages.success(request, self.success_message)
+        referrer = request.META.get('HTTP_REFERER', None)
+
+        return HttpResponseRedirect(referrer or '/')
