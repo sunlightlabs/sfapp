@@ -190,6 +190,7 @@ dd { margin-bottom: 25px; }
 form label { font-family: Georgia, "Times New Roman", Times, serif; font-size: 110%; }
 .content .form-horizontal label { float: left; width: 160px; text-align: left; padding-top: 5px;}
 .span6 input, .span7 input, .span5 input, .span8 input, .content .form-horizontal .asInput { width: 300px; font-weight: normal;}
+input[type=checkbox] { width: auto; }
 /*.form-horizontal label { float: left; width: 120px; }*/
 .form-horizontal input { clear: right;}
 /*.span6 input, .span7 input, .span5 input { width: 300px;} */
