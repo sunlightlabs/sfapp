@@ -194,7 +194,7 @@ form label { font-family: Georgia, "Times New Roman", Times, serif; font-size: 1
 .form-horizontal input { clear: right;}
 /*.span6 input, .span7 input, .span5 input { width: 300px;} */
 form li { margin-bottom: 15px;}
-.container .content .checkbox { width: 15px; margin-right: 10px; float: left; margin-top: 5px;}
+/*.container .content .checkbox { width: 15px; margin-right: 10px; float: left; margin-top: 5px;}*/
 
 .sf-footerWrapper { background-color: #fafaf7; border-top: 1px solid #ece9e9; margin-top: 70px; padding-top: 50px; min-height: 220px;}
 .sf-footer { color: #9f9a97;}
