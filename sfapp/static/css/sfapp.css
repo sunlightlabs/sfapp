@@ -188,11 +188,12 @@ dd { margin-bottom: 25px;}
 form label { font-family: Georgia, "Times New Roman", Times, serif; font-size: 110%; }
 .content .form-horizontal label { float: left; width: 120px; text-align: left; padding-top: 5px;}
 .span6 input, .span7 input, .span5 input, .span8 input, .content .form-horizontal .asInput { width: 300px; font-weight: normal;} 
+input[type=checkbox] { width: auto; }
 /*.form-horizontal label { float: left; width: 120px; }*/
 .form-horizontal input { clear: right;}
 /*.span6 input, .span7 input, .span5 input { width: 300px;} */
 form li { margin-bottom: 15px;}
-.container .content .checkbox { width: 15px; margin-right: 10px; float: left; margin-top: 5px;}
+/*.container .content .checkbox { width: 15px; margin-right: 10px; float: left; margin-top: 5px;}*/
 
 .sf-footerWrapper { background-color: #fafaf7; border-top: 1px solid #ece9e9; margin-top: 70px; padding-top: 50px; min-height: 220px;}
 .sf-footer { color: #9f9a97;}
@@ -207,7 +208,7 @@ form li { margin-bottom: 15px;}
 .hero-unit { padding: 40px; border: 1px solid #d6d3d3; border-radius: 0;}
 .withBorder { border: 1px solid #F0EDED; }
 
-.terms { 
+.terms {
     margin-top: 30px;
 }
 
