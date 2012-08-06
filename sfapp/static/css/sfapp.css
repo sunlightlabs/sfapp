@@ -116,8 +116,8 @@ ul.nav li a:hover { background-color: inherit; color: #C9A706; }
 h1, h2, h3, h4, legend { font-weight: normal; color: #635f5c; max-width: 580px;}
 h1 { font-family: Georgia, 'Times New Roman', Times, serif; font-size: 270%; line-height: 30px; margin-bottom: 30px;}
 h2 { margin-bottom: 30px; font-size: 260%; line-height: 38px; text-transform: uppercase;}
-h3, .h2, legend { font-family: Georgia, "Times New Roman", Times, serif; margin-bottom: 25px; font-size: 210%; line-height: 33px; text-transform: capitalize; }
-h4, .h3 { font-size: 170%; margin-bottom: 20px; line-height: 27px; text-transform: capitalize; font-family: Georgia, 'Times New Roman', Times, serif;}
+h3, .h2, legend { font-family: Georgia, "Times New Roman", Times, serif; margin-bottom: 25px; font-size: 210%; line-height: 33px; text-transform: normal; }
+h4, .h3 { font-size: 170%; margin-bottom: 20px; line-height: 27px; text-transform: normal; font-family: Georgia, 'Times New Roman', Times, serif;}
 h5, .h4 { font-weight: bold; margin-bottom: 20px; font-size: 140%; line-height: 22px; text-transform: capitalize;}
 h6, .h5 { font-weight: bold; font-size: 125%; margin-bottom: 15px; text-transform: capitalize;}
 
@@ -125,13 +125,12 @@ h1 a, h1 a:active, h1 a:visited, h2 a, h2 a:active, h2 a:visited, h3 a, h3 a:act
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 
 .sf-header {
-    background: url(../img/sfapp_bg_header.jpg) center top repeat-x;
+    background: url(../img/sfapp_bg_header.jpg) center bottom repeat-x;
     background-color: #b7d2ef;
-    margin-bottom: 50px;
     height: 60px;
 }
 .sf-header a.sf-logo {
-    background: url(../img/sfapp_logo.png) top right no-repeat;
+    background: url(../images/sfapp_logo.png) top right no-repeat;
     display: block;
     float: right;
     height: 40px;
