@@ -128,6 +128,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
     background: url(../img/sfapp_bg_header.jpg) center bottom repeat-x;
     background-color: #b7d2ef;
     height: 60px;
+    margin-bottom: 50px;
 }
 .sf-header a.sf-logo {
     background: url(../img/sfapp_logo.png) top right no-repeat;
