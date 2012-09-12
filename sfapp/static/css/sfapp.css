@@ -168,6 +168,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 
 .slf-list { padding-left: 15px; margin: 0;}
 .slf-list li { list-style-image: url(../img/bg_list.png); margin-bottom: 25px; }
+.slf-list a:active, .slf-list a:visited, .slf-list a:link { color: #76716E; border-bottom: 1px dotted #c9a706; }
+.slf-list a:hover { color: #827b78; }
 
 .form-inline li { float: left; display:inline; margin-right: 20px; margin-bottom: 15px; margin-left: 0; clear: none;}
 .form-inline li.last, .form-inline li:last-child { margin-right: 0; }
