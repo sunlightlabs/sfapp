@@ -58,7 +58,7 @@ textarea:focus {
             border-radius: 6px;
 }
 
-.btn-sunlight {
+.btn-sunlight:link, .btn-sunlight:active, .btn-sunlight:visited {
     color: #fdfcfb;
     background-color: #ce6100;
     background-image: -moz-linear-gradient(top, #ce6100, #ba5300);
@@ -101,6 +101,8 @@ form li { clear: both; }
 ul.nav { margin-bottom: 0; }
 ul.nav li a { color: #222; }
 ul.nav li a:hover { background-color: inherit; color: #C9A706; }
+
+.row li { margin-bottom: 15px; }
 
 .nav i { margin-top: 2px; padding-right: 5px;}
 .listNav { float: right; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 120%; }
@@ -159,6 +161,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 .tip { margin-bottom: 20px;}
 .withTip { margin-bottom: 5px;}
 .textReplace { display: block; text-indent: -9999em; }
+.inlineTip { display: inline; }
 
 .pushInward { margin-left: 25px;}
 
@@ -182,6 +185,9 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 .floatList li { float: left; margin-right: 15px;}
 
 .withLine li { border-bottom: 1px solid #EFEFEF; padding: 15px 5px 5px;}
+.elementWithLine { border-bottom: 1px dashed #EFEFEF; padding-bottom: 20px; margin-bottom: 10px;  }
+
+.bottomBtn { margin-top: 50px; }
 
 .street-address { display: block; }
 
@@ -191,7 +197,7 @@ dd { margin-bottom: 25px; }
 .floatedList dt { float: left; margin-right: 5px; margin-bottom: 0; }
 .floatedList dd { float: left; margin-right: 15px; margin-left: 0; margin-bottom: 0; }
 
-legend { padding-bottom: 5px;}
+legend { padding-bottom: 5px; font-size: 115%; font-weight: bold; margin-bottom: 15px; }
 
 #sfapp-subscribe-form li { float: left; margin-right: 10px; }
 #sfapp-subscribe-form input[name=email] { width: 140px; }
@@ -217,7 +223,7 @@ form label { font-family: Georgia, "Times New Roman", Times, serif; font-size: 1
 form li { margin-bottom: 15px; }
 input[type=checkbox] { width: auto; }
 .container .content .checkbox input { width: 15px; margin-right: 10px; float: left; margin-top: 5px;}
-.normalList li { clear: both;}
+.normalList li { clear: both; }
 
 .sf-footerWrapper { background-color: #fafaf7; border-top: 1px solid #ece9e9; margin-top: 70px; padding-top: 50px; min-height: 220px;}
 .sf-footer { color: #9f9a97;}
@@ -232,9 +238,7 @@ input[type=checkbox] { width: auto; }
 .hero-unit { padding: 40px; border: 1px solid #d6d3d3; border-radius: 0;}
 .withBorder { border: 1px solid #F0EDED; }
 
-.terms {
-    margin-top: 30px;
-}
+.terms { margin-top: 30px; }
 
 .sf-footer div.terms p{
     font-family: Georgia, 'Times New Roman', Times, serif;
