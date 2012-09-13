@@ -94,7 +94,7 @@ textarea:focus {
 input,button,select,textarea { font-family: "Georgia", "Times New Roman", "Times", serif; }
 
 form input, form select { border: 2px solid #e7e4dc; }
-form select { padding: 3px 4px; }
+.container form select { padding: 3px 4px; height: 30px; }
 form ul { list-style: none; margin: 0; padding: 0; }
 form li { clear: both; }
 
@@ -221,7 +221,7 @@ form label { font-family: Georgia, "Times New Roman", Times, serif; font-size: 1
 .content .form-horizontal label { float: left; width: 160px; text-align: left; padding-top: 5px;}
 .form-horizontal input { clear: right;}
 form li { margin-bottom: 15px; }
-input[type=checkbox] { width: auto; }
+input[type=checkbox] { width: 15px; }
 .container .content .checkbox input { width: 15px; margin-right: 10px; float: left; margin-top: 5px;}
 .normalList li { clear: both; }
 
