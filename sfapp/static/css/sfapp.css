@@ -34,6 +34,7 @@ fieldset ul { padding-top: 2em; }
      max-width: none;
 }
 
+.clear { clear: both; }
 
 .form-actions, .well { background-color: #eeebe1; }
 
@@ -45,7 +46,8 @@ textarea:focus {
             box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(201, 167, 6, 0.3);
 }
 
-.btn {
+.btn:link, .btn:active, .btn:visited {
+    color: #333;
     border: 3px solid #e9e8e3;
     font-family: "Georgia", "Times New Roman", "Times", serif;
     font-style: normal;
@@ -156,6 +158,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 .textCallout { background:#CA5703; color: #fff;}
 .boxCallout { background-color: #f9f8f8; border: 1px solid #f0eded; padding: 25px 15px; text-align: center;}
 .boxCallout li { text-align: left;}
+.sideCallout { background-color: #FCFCFC; border: 1px solid #F4F4F4; padding: 10px 15px;  }
 
 .tip, time { font-family: Georgia, 'Times New Roman', Times, serif; font-style: oblique; color: #97928f; display: block; line-height: 21px; max-width: 680px;}
 .tip { margin-bottom: 20px;}
@@ -180,12 +183,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 .form-inline.compact label, .form-inline.compact input { display: block;}
 
 .module .form-vertical input { width: 95%;}
-.form-vertical { margin-bottom: 0;}
+.form-vertical li { margin-bottom: 0;}
 
 .floatList li { float: left; margin-right: 15px;}
 
-.withLine li { border-bottom: 1px solid #EFEFEF; padding: 15px 5px 5px;}
-.elementWithLine { border-bottom: 1px dashed #EFEFEF; padding-bottom: 20px; margin-bottom: 10px;  }
+.withLine li { border-bottom: 1px solid #DDDDDD; padding: 15px 5px 5px;}
+.elementWithLine { border-bottom: 1px dashed #DDDDDD; padding-bottom: 20px; margin-bottom: 15px;  }
 
 .bottomBtn { margin-top: 50px; }
 
@@ -246,3 +249,5 @@ input[type=checkbox] { width: 15px; }
     font-style: oblique;
     line-height: 18px;
 }
+
+.hidden { display: none; }
