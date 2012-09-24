@@ -9,13 +9,26 @@ $(document).ready(function() {
             zipcode = $form.find('input[name=zipcode]').val(),
             url = $form.attr('action') || '/subscribe/';
 
-        var params = {
+        var data = {
             response: response_type,
             email: email,
             zipcode: zipcode
         };
 
-        $.post(url, params, function(resp) {
+        var params = {
+          type: 'POST',
+          url: url,
+          data: data
+        };
+
+        // Add preflight request if the url is on a different domain
+        if(url.match(/^http/) && !url.match(new RegExp('^https?:\/\/' + location.host.replace('.', '\\.')))){
+          params['headers'] = {
+            'Access-Control-Allow-Headers': 'x-requested-with, x-requested-by'
+          };
+        }
+
+        $.ajax(params).success(function(resp) {
             var $p = $('<p>').text(resp.message).hide();
             $form.slideUp('fast', function() {
                 $form.after($p);
