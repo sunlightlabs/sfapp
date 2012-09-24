@@ -4,12 +4,12 @@ $(document).ready(function() {
 
         var $form = $(this);
 
-        var csrfToken = $form.find('input[name=csrfmiddlewaretoken]').val();
+        var response_type = $form.find('input[name=response]').val();
         var email = $form.find('input[name=email]').val();
         var zipcode = $form.find('input[name=zipcode]').val();
 
         var params = {
-            csrfmiddlewaretoken: csrfToken,
+            response: response_type,
             email: email,
             zipcode: zipcode
         };
