@@ -5,7 +5,7 @@
 
 body {
     background: url(../img/sfapp_bg.jpg) center 48px repeat-x #FFFFFF;
-    color: #76716e;
+    color: #3B3633;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 13px;
     line-height: 19px;
@@ -60,7 +60,7 @@ textarea:focus {
             border-radius: 6px;
 }
 
-.btn-sunlight:link, .btn-sunlight:active, .btn-sunlight:visited {
+.btn-sunlight:hover, .btn-sunlight:link, .btn-sunlight:active, .btn-sunlight:visited {
     color: #fdfcfb;
     background-color: #ce6100;
     background-image: -moz-linear-gradient(top, #ce6100, #ba5300);
@@ -117,7 +117,7 @@ ul.nav li a:hover { background-color: inherit; color: #C9A706; }
  * wrapper-specific styles
  */
 
-h1, h2, h3, h4, legend { font-weight: normal; color: #635f5c; max-width: 580px;}
+h1, h2, h3, h4, legend { font-weight: normal; color: #635f5c; max-width: 680px;}
 h1 { font-family: Georgia, 'Times New Roman', Times, serif; font-size: 270%; line-height: 40px; margin-bottom: 30px;}
 h2 { margin-bottom: 30px; font-size: 260%; line-height: 38px; text-transform: uppercase;}
 h3, .h2, legend { font-family: Georgia, "Times New Roman", Times, serif; margin-bottom: 25px; font-size: 210%; line-height: 33px; text-transform: normal; }
@@ -155,7 +155,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 .module { margin-bottom: 60px;}
 .content .moduleSm { margin-bottom: 5px; padding-bottom: 0;}
 
-.textCallout { background:#CA5703; color: #fff;}
+.textCallout { background: #CA5703; color: #fff; padding: 0.1em 0.3em; }
 .boxCallout { background-color: #f9f8f8; border: 1px solid #f0eded; padding: 25px 15px; text-align: center;}
 .boxCallout li { text-align: left;}
 .sideCallout { background-color: #FCFCFC; border: 1px solid #F4F4F4; padding: 10px 15px;  }
@@ -168,7 +168,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
 
 .pushInward { margin-left: 25px;}
 
-.viewMore { font-family: Georgia, 'Times New Roman', Times, serif; font-style: oblique; font-size: 115%; margin-top: 20px; display: block;} 
+.viewMore { font-family: Georgia, 'Times New Roman', Times, serif; font-style: oblique; font-size: 115%; margin-top: 20px; display: block;}
 
 .subscribe-thanks { display: none; }
 
@@ -238,7 +238,7 @@ input[type=checkbox] { width: 15px; }
     margin-right: -1px;
 }
 
-.hero-unit { padding: 40px; border: 1px solid #d6d3d3; border-radius: 0;}
+.hero-unit { padding: 40px; border: 1px solid #d6d3d3; border-radius: 0; font-size: 120%; }
 .withBorder { border: 1px solid #F0EDED; }
 
 .terms { margin-top: 30px; }

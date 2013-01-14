@@ -19,51 +19,52 @@
         </nav>
     </header>
     <div class="module hero-unit">
-        <div class="span7">
-            <h2>Who’s trying to influence your vote? <br /> Help us find out!</h2>
-            <p>New campaign finance rules mean that the airwaves this election year will be dominated by outside groups, many of whom don’t have to disclose the sources of their funding and don’t even have to register with the Federal Election Commission. But there is one place where they will leave a paper trail: At the TV stations where they buy their ads. For the first time, the Federal Communication Commission (FCC) has ruled to require television stations in the top 50 media markets to put their public and political files online. These files contain information on political ad spending which are crucial to the public interest. But the top 50 media markets cover only a fraction of the swing states, where the majority of political ad spending will occur. We need your help to unlock the rest of the political files and post the information online.</p>
-            <p>Sunlight Foundation in partnership with Free Press, New America Foundation and other coalition members are working with our members, volunteers, journalists and allies across the country to inspect political files and post our findings online. As a pilot project, we will focus on Wisconsin’s gubernatorial election on June 5th. <span class="textCallout">Sign up for a training or search for a tv station near you.</span></p>
-        </div>
-        <div class="span4">
-
-        </div>
-        <div class="clearfix"></div>
+    	<div class="row">
+	        <div class="span9">
+	            <h2>Who’s trying to influence your vote? <br /> Help us find out!</h2>
+	            <p>New campaign finance rules mean that the airwaves this election year will be dominated by outside groups, many of whom don’t have to disclose the sources of their funding and don’t even have to register with the Federal Election Commission. But there is one place where they will leave a paper trail: At the TV stations where they buy their ads. For the first time, the Federal Communication Commission (FCC) has ruled to require television stations in the top 50 media markets to put their public and political files online. These files contain information on political ad spending which are crucial to the public interest. But the top 50 media markets cover only a fraction of the swing states, where the majority of political ad spending will occur. We need your help to unlock the rest of the political files and post the information online.</p>
+	            <p>Sunlight Foundation in partnership with Free Press, New America Foundation and other coalition members are working with our members, volunteers, journalists and allies across the country to inspect political files and post our findings online. As a pilot project, we will focus on Wisconsin’s gubernatorial election on June 5th. <span class="textCallout">Sign up for a training or search for a tv station near you.</span></p>
+	        </div>
+	    </div>
     </div>
 
     <form id='action_signup' class='form-vertical' action="/broadcasters/action_signup/" method="post" accept-charset="utf-8">
-            <ul>
-                <li>
-                        <label>Email:</label>
-                        <input type="email" name="email" value="" placeholder="Email" required="required">
-                </li>
-                <li>
-                    <label>First Name:</label>
-                    <input type="text" name="firstname" value="" placeholder="First Name" id="firstname">
-                </li>
-                <li>
-                    <label>Last Name:</label>
-                    <input type="text" name="lastname" value="" id="lastname" placeholder="Last Name">
-                </li>
-                <li>
-                    <label>Phone:</label>
-                    <input type="text" name="phone" value="" placeholder="Phone" id="phone">
-                </li>
-                <li>
-                    <label>Callsign:</label>
-                    <select name="custom-1093" id="station" size="1"></select>
-                </li>
-                <li>
-                    <label>Share with Free Press: </label>
-                    <label class="tip asInput"><input class="checkbox" type="checkbox" name="custom-1116" id="optin" checked="checked" />Yes, I would like to receive email alerts from Free Press</label>
-                </li>
-                <li>
-                    <input type="submit" class="btn" value="Sign up &rarr;">
-                </li>
-                </ul>
-            </form>
-    <h3 class="withTip">Find Nearby Stations in Wisconsin</h3>
-    <p class="tip">Find stations near you! Use this form to search for TV stations within a search radius. This will return a list of stations ordered by distance (as the crow flies). Actual driving distance will vary.</p>
+        <ul>
+            <li>
+                <label>Email:</label>
+                <input type="email" name="email" value="" placeholder="Email" required="required">
+            </li>
+            <li>
+                <label>First Name:</label>
+                <input type="text" name="firstname" value="" placeholder="First Name" id="firstname">
+            </li>
+            <li>
+                <label>Last Name:</label>
+                <input type="text" name="lastname" value="" id="lastname" placeholder="Last Name">
+            </li>
+            <li>
+                <label>Phone:</label>
+                <input type="text" name="phone" value="" placeholder="Phone" id="phone">
+            </li>
+            <li>
+                <label>Callsign:</label>
+                <select name="custom-1093" id="station" size="1"></select>
+            </li>
+            <li>
+                <label>Share with Free Press: </label>
+                <label class="tip asInput"><input class="checkbox" type="checkbox" name="custom-1116" id="optin" checked="checked" />Yes, I would like to receive email alerts from Free Press</label>
+            </li>
+            <li>
+                <input type="submit" class="btn btn-sunlight" value="Sign up &rarr;">
+                <button class="btn btn-sunlight">&lt;button&gt;</button>
+                <a href="#" class="btn btn-sunlight">&lt;a&gt;</a>
+            </li>
+        </ul>
+    </form>
 
+    <h3 class="withTip">Find Nearby Stations in Wisconsin</h3>
+
+    <p class="tip">Find stations near you! Use this form to search for TV stations within a search radius. This will return a list of stations ordered by distance (as the crow flies). Actual driving distance will vary.</p>
 
     <ul>
         <li>
@@ -118,14 +119,14 @@
         </ul>
         <div class="clearfix"></div>
     </form>
-    
+
     <dl>
         <dt>Title:</dt>
         <dd>description of title</dd>
-        
+
         <dt>Title:</dt>
         <dd>description of title</dd>
-    </dl>    
+    </dl>
 
 
 {% endblock %}
