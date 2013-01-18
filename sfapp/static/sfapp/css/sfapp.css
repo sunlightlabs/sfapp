@@ -46,7 +46,7 @@ textarea:focus {
             box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(201, 167, 6, 0.3);
 }
 
-.btn:link, .btn:active, .btn:visited {
+.btn, .btn:link, .btn:active, .btn:visited {
     color: #333;
     border: 3px solid #e9e8e3;
     font-family: "Georgia", "Times New Roman", "Times", serif;
@@ -60,7 +60,7 @@ textarea:focus {
             border-radius: 6px;
 }
 
-.btn-sunlight:hover, .btn-sunlight:link, .btn-sunlight:active, .btn-sunlight:visited {
+.btn-sunlight, .btn-sunlight:hover, .btn-sunlight:link, .btn-sunlight:active, .btn-sunlight:visited {
     color: #fdfcfb;
     background-color: #ce6100;
     background-image: -moz-linear-gradient(top, #ce6100, #ba5300);
