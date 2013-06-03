@@ -2,7 +2,7 @@
 import os
 import sys
 
-from django.conf.urls.defaults import *
+from django.conf.urls import *
 
 PWD = os.path.abspath(os.path.dirname(__file__))
 
