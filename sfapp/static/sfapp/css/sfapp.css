@@ -135,7 +135,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
     margin-bottom: 50px;
 }
 .sf-header a.sf-logo {
-    background: url(http://dx2r1bo18ld3u.cloudfront.net/3.0/static/images/sunlight-logo.svg?c546760cedb0) top right no-repeat;
+    background: url(//dx2r1bo18ld3u.cloudfront.net/3.0/static/images/sunlight-logo.svg?c546760cedb0) top right no-repeat;
     display: block;
     float: right;
     height: 40px;
