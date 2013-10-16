@@ -18,7 +18,9 @@ setup(
     packages=find_packages(),
     package_data={
         'sfapp': [
-            'static/*/*',
+            'static/*/css/*',
+            'static/*/js/*',
+            'static/*/img/*',
             'templates/*/*',
         ]
     },
