@@ -1,0 +1,280 @@
+
+/*
+ * base element styles
+ */
+
+body {
+    background: url(../img/sfapp_bg.jpg) center 48px repeat-x #FFFFFF;
+    color: #3B3633;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+    margin-top: -9px;
+}
+
+a:hover, a:active { outline: none; }
+a, a:active, a:visited { color: #c9a706; }
+a:hover { color: #827b78; }
+
+dd { margin-bottom: 1em; }
+
+fieldset {
+    margin-bottom: 3em;
+    p { margin: 1em 0; }
+    ul { padding-top: 2em; }
+}
+
+form label { font-family: Georgia, "Times New Roman", Times, serif; font-size: 110%; }
+
+legend { padding-bottom: 5px; font-size: 115%; font-weight: bold; margin-bottom: 15px; }
+
+input, button, select, textarea { font-family: "Georgia", "Times New Roman", "Times", serif; }
+
+/*
+ * utilities
+ */
+
+.clear { clear: both; }
+.hidden { display: none; }
+
+
+/*
+ * override bootstrap styles
+ */
+
+.well { background-color: #eeebe1; }
+::selection { background:#CA5703; color:#fff; text-shadow: none; }
+
+/* Fix for Google Maps image elements */
+.gmnoprint img, .gmnocsreen img {
+     max-width: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: rgba(201, 167, 6, 0.3);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(201, 167, 6, 0.3);
+       -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(201, 167, 6, 0.3);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(201, 167, 6, 0.3);
+}
+
+.btn, .btn:link, .btn:active, .btn:visited {
+    color: #333;
+    border: 3px solid #e9e8e3;
+    font-family: "Georgia", "Times New Roman", "Times", serif;
+    font-style: normal;
+    font-weight: normal;
+    padding: 4px 15px 4px;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+         -o-border-radius: 6px;
+            border-radius: 6px;
+}
+
+.btn-sunlight, .btn-sunlight:hover, .btn-sunlight:link, .btn-sunlight:active, .btn-sunlight:visited {
+    color: #fdfcfb;
+    background-color: #ce6100;
+    background-image: -moz-linear-gradient(top, #ce6100, #ba5300);
+    background-image: -ms-linear-gradient(top, #ce6100, #ba5300);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ce6100), to(#ba5300));
+    background-image: -webkit-linear-gradient(top, #ce6100, #ba5300);
+    background-image: -o-linear-gradient(top, #ce6100, #ba5300);
+    background-image: linear-gradient(top, #ce6100, #ba5300);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce6100', endColorstr='#ba5300', GradientType=0);
+    border-color: #ba5300 #ba5300 #000000;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+    font-style: normal;
+    text-shadow: 0 1px 1px rgba(186, 83, 0, 0.75);
+}
+.btn-sunlight:hover,
+.btn-sunlight:active,
+.btn-sunlight.active,
+.btn-sunlight.disabled,
+.btn-sunlight[disabled] {
+    color: #fdfcfb;
+    background-color: #ba5300;
+}
+.btn-sunlight:active,
+.btn-sunlight.active {
+    background-color: #ba5300;
+    background-color: #ba5300 \9;
+}
+
+.messages ul { list-style: none; margin: 0; padding: 0; }
+
+ul.nav {
+    margin-bottom: 0;
+    i {
+        margin-top: 2px;
+        padding-right: 5px;
+    }
+    li {
+        a { color: #222; }
+        a:hover { background-color: inherit; color: #C9A706; }
+    }
+}
+
+.listNav {
+    float: right;
+    font-family: Georgia, 'Times New Roman', Times, serif; font-size: 120%;
+    .first { border: none; }
+    a:hover {
+        border-bottom: 1px dotted #C9A706;
+        text-decoration: none;
+    }
+    a:link, a:active, a:visited {
+        color: #76716E;
+        padding-bottom: 2px;
+    }
+    li {
+        border-left: 1px solid #b7b2b0;
+        float: right;
+        margin-left: 20px;
+        padding-left: 20px;
+    }
+}
+
+.nav-pills > li > a { padding: 0;}
+
+/*
+ * wrapper-specific styles
+ */
+
+h1, h2, h3, h4, legend { font-weight: normal; color: #635f5c; max-width: 680px;}
+h1 { font-family: Georgia, 'Times New Roman', Times, serif; font-size: 270%; line-height: 40px; margin-bottom: 30px;}
+h2 { margin-bottom: 30px; font-size: 260%; line-height: 38px; text-transform: uppercase;}
+h3, .h2, legend { font-family: Georgia, "Times New Roman", Times, serif; margin-bottom: 25px; font-size: 210%; line-height: 33px; text-transform: normal; }
+h4, .h3 { font-size: 170%; margin-bottom: 20px; line-height: 27px; text-transform: normal; font-family: Georgia, 'Times New Roman', Times, serif;}
+h5, .h4 { font-weight: bold; margin-bottom: 20px; font-size: 140%; line-height: 22px; text-transform: normal;}
+h6, .h5 { font-weight: bold; font-size: 125%; margin-bottom: 15px; text-transform: capitalize;}
+
+h1 a, h1 a:active, h1 a:visited, h2 a, h2 a:active, h2 a:visited, h3 a, h3 a:active, h3 a:visited, h4 a, h4 a:active, h4 a:visited, h5 a, h5 a:active, h5 a:visited { color: #635f5c; }
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { color: #b9a609; }
+
+.sf-header {
+    background: url(../img/sfapp_bg_header.jpg) center bottom repeat-x;
+    background-color: rgb(231, 240, 233);
+    height: 60px;
+    margin-bottom: 50px;
+    a.sf-logo {
+        background: url(//dx2r1bo18ld3u.cloudfront.net/3.0/static/images/sunlight-logo.svg?c546760cedb0) top right no-repeat;
+        display: block;
+        float: right;
+        height: 40px;
+        text-indent: -9999px;
+        width: 160px;
+        margin-top: 19px;
+        background-size: contain;
+    }
+}
+
+.subnav {
+    border-bottom: 1px solid #D6D3D2;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    width: 100%;
+    a:link, a:active, a:visited { color: #EFEBE9; font-size: 115%; }
+    li {
+        background-color: #78716F;
+        margin-right: 10px;
+        padding: 10px 20px;
+        -webkit-border-radius: 10px;
+           -moz-border-radius: 10px;
+    }
+    li.active {
+        background-color: white;
+        border-left: 1px solid #EEEDEC;
+        border-right: 1px solid #EEEDEC;
+        border-top: 1px solid #EEEDEC;
+        margin-top: -5px;
+        padding-bottom: 20px;
+        padding-top: 15px;
+        -webkit-border-bottom-left-radius: 0px;
+        -moz-border-radius-bottomleft: 0px;
+        -webkit-border-bottom-right-radius: 0px;
+        -moz-border-radius-bottomright: 0px;
+    }
+    li:hover {
+        background-color: #5B5553;
+        a:link, a:active, a:visited { color: #EFEBE9; }
+    }
+}
+
+.module { margin-bottom: 60px;}
+
+.jumbotron { padding: 40px; border: 1px solid #d6d3d3; border-radius: 0; font-size: 120%; }
+
+.text-callout { background: #CA5703; color: #fff; padding: 0.15em 0.4em; }
+.box-callout {
+    background-color: #f9f8f8;
+    border: 1px solid #f0eded;
+    padding: 25px 15px;
+    text-align: center;
+    li {
+        text-align: left;
+    }
+}
+.side-callout { background-color: #FCFCFC; border: 1px solid #F4F4F4; padding: 10px 15px;  }
+
+.tip, time { font-family: Georgia, 'Times New Roman', Times, serif; font-style: oblique; color: #97928f; display: block; line-height: 21px; max-width: 680px;}
+
+a.more {
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 115%;
+    font-style: oblique;
+    margin-top: 20px;
+}
+
+.vcard {
+    .adr {
+        .street-address { display: block; }
+    }
+}
+
+.inline-list {
+    margin-bottom: 2em;
+    margin-top: 1em;
+    padding-bottom: 10px;
+    dt { float: left; margin-right: 1em; margin-bottom: 0; }
+    dd { float: left; margin-right: 3em; margin-left: 0; margin-bottom: 0; padding-top: 1px; }
+    li { float: left; margin-right: 3em; }
+}
+
+#sfapp-subscribe-form {
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+.subscribe-thanks { display: none; }
+
+
+footer {
+    background-color: #fafaf7;
+    border-top: 1px solid #ece9e9;
+    color: #9f9a97;
+    margin-top: 70px;
+    min-height: 220px;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    h4 {
+        color: #9f9a97;
+        margin-bottom: 0.5em;
+    }
+    .span-divider {
+        border-right: 1px dashed #e8e6de;
+        margin-right: -1px;
+    }
+    .terms {
+        padding-top: 35px;
+        p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 95%;
+            font-style: oblique;
+            line-height: 18px;
+        }
+    }
+    .tip { color: #9f9a97; }
+}

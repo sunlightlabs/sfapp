@@ -18,122 +18,115 @@
             </ul>
         </nav>
     </header>
-    <div class="module hero-unit">
+    <div class="module jumbotron">
     	<div class="row">
-	        <div class="span9">
+	        <div class="col-md-9">
 	            <h2>Who’s trying to influence your vote? <br /> Help us find out!</h2>
 	            <p>New campaign finance rules mean that the airwaves this election year will be dominated by outside groups, many of whom don’t have to disclose the sources of their funding and don’t even have to register with the Federal Election Commission. But there is one place where they will leave a paper trail: At the TV stations where they buy their ads. For the first time, the Federal Communication Commission (FCC) has ruled to require television stations in the top 50 media markets to put their public and political files online. These files contain information on political ad spending which are crucial to the public interest. But the top 50 media markets cover only a fraction of the swing states, where the majority of political ad spending will occur. We need your help to unlock the rest of the political files and post the information online.</p>
-	            <p>Sunlight Foundation in partnership with Free Press, New America Foundation and other coalition members are working with our members, volunteers, journalists and allies across the country to inspect political files and post our findings online. As a pilot project, we will focus on Wisconsin’s gubernatorial election on June 5th. <span class="textCallout">Sign up for a training or search for a tv station near you.</span></p>
+	            <p>Sunlight Foundation in partnership with Free Press, New America Foundation and other coalition members are working with our members, volunteers, journalists and allies across the country to inspect political files and post our findings online. As a pilot project, we will focus on Wisconsin’s gubernatorial election on June 5th. <span class="text-callout">Sign up for a training or search for a tv station near you.</span></p>
 	        </div>
 	    </div>
     </div>
 
-    <form id='action_signup' class='form-vertical' action="/broadcasters/action_signup/" method="post" accept-charset="utf-8">
-        <ul>
-            <li>
-                <label>Email:</label>
-                <input type="email" name="email" value="" placeholder="Email" required="required">
-            </li>
-            <li>
-                <label>First Name:</label>
-                <input type="text" name="firstname" value="" placeholder="First Name" id="firstname">
-            </li>
-            <li>
-                <label>Last Name:</label>
-                <input type="text" name="lastname" value="" id="lastname" placeholder="Last Name">
-            </li>
-            <li>
-                <label>Phone:</label>
-                <input type="text" name="phone" value="" placeholder="Phone" id="phone">
-            </li>
-            <li>
-                <label>Callsign:</label>
-                <select name="custom-1093" id="station" size="1"></select>
-            </li>
-            <li>
-                <label>Share with Free Press: </label>
-                <label class="tip asInput"><input class="checkbox" type="checkbox" name="custom-1116" id="optin" checked="checked" />Yes, I would like to receive email alerts from Free Press</label>
-            </li>
-            <li>
-                <input type="submit" class="btn btn-sunlight" value="Sign up &rarr;">
-                <button class="btn btn-sunlight">&lt;button&gt;</button>
-                <a href="#" class="btn btn-sunlight">&lt;a&gt;</a>
-            </li>
-        </ul>
-    </form>
+    <div class="module">
+	    <div class="row">
+	    	<div class="col-md-8">
+			    <form role="form" class="form-horizontal" id='action_signup' action="." method="get" accept-charset="utf-8">
+			        <div class="form-group">
+			            <label class="col-sm-2 control-label" for="">Email</label>
+			            <div class="col-sm-5">
+			            	<input class="form-control" type="email" name="email" value="" placeholder="me@sunlightfoundation.com" required="required">
+			            </div>
+			        </div>
+			        <div class="form-group">
+			            <label class="col-sm-2 control-label" for="">Name</label>
+			            <div class="col-sm-5">
+			            	<input class="form-control" type="text" name="name" value="" placeholder="Sunlight Foundation" required="required">
+			            </div>
+			        </div>
+			        <div class="form-group">
+			            <label class="col-sm-2 control-label" for="">Phone</label>
+			            <div class="col-sm-3">
+			            	<input class="form-control" type="phone" name="phone" value="" placeholder="555-555-5555" required="required">
+			            </div>
+			        </div>
 
-    <h3 class="withTip">Find Nearby Stations in Wisconsin</h3>
+			        <div class="form-group">
+			            <label class="col-sm-2 control-label" for="">Callsign</label>
+			            <div class="col-sm-5">
+			                <select class="form-control" name="callsign"></select>
+			            </div>
+			        </div>
 
-    <p class="tip">Find stations near you! Use this form to search for TV stations within a search radius. This will return a list of stations ordered by distance (as the crow flies). Actual driving distance will vary.</p>
+			        <div class="form-group">
+			        	<div class="col-sm-offset-2 col-sm-8">
+					        <div class="checkbox">
+							  <label>
+							    <input type="checkbox" value="">
+							    Yes, I would like to receive email alerts from Free Press
+							  </label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group form-actions">
+			    		<div class="col-sm-offset-2 col-sm-8">
+			                <button type="submit" class="btn btn-sunlight">Sign up &rarr;</button>
+			                <a href="#" class="btn btn-sunlight">&lt;a&gt;</a>
+						</div>
+					</div>
+			    </form>
+			</div>
+			<div class="col-md-4">
+    			<p class="well">Something well-ish.</p>
+			</div>
+		</div>
+    </div>
 
-    <ul>
-        <li>
-            <h5 class="withTip">WISN-TV</h5>
-            <dl class="smallModule floatedList">
-                <dt>Network:</dt>
-                <dd>ABC</dd>
+    <div class="module row">
+    	<div class="col-md-6">
+    		<h3>Stations in Wisconsin</h3>
+    		<p class="tip">Tip: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus purus in gravida rutrum. Aliquam erat volutpat. Nunc egestas iaculis varius. Aliquam tristique risus at lorem varius, vitae malesuada purus tincidunt.</p>
+    		<div class="box-callout">
+			    <ul>
+			        <li>
+			            <h5 class="withTip">WISN-TV</h5>
+			            <dl class="inline-list">
+			                <dt>Network:</dt>
+			                <dd>ABC</dd>
 
-                <dt>Channel:</dt>
-                <dd>34</dd>
-            </dl>
-            <address class="vcard">
-                <span class="adr">
-                    <span class="street-address">759 N. 19th Street</span>
-                    <span class="locality">Milwaukee</span>,
-                    <span class="region" title="Wisconsin">WI</span>
-                    <span class="postal-code">52333</span>
-                </span>
-            </address>
-        </li>
-    </ul>
-
-
-    <!-- This is a demo of a compact inline form -->
-    <form id="map_form" class="form-inline compact boxCallout" action="#map_form" method="get" accept-charset="utf-8">
-        <ul>
-            <li>
-                <label>Address</label>
-                <input type="text" name="address" id="address" class="span4" value="" placeholder="Street Address" required="required" size="75">
-            </li>
-            <li>
-                <label>City</label>
-                <input type="text" class="input-medium" name="city" placeholder="City" value="" id="city">
-            </li>
-            <li>
-                <label class="hidden">State</label>
-                <label>Wisconsin</label>
-            </li>
-            <li>
-                <label>Radius</label>
-                <select name="radius" id="radius" class="span2">
-                    <option value="10">10 miles</option>
-                    <option value="25" selected="">25 miles</option>
-                    <option value="50">50 miles</option>
-                    <option value="100">100 miles</option>
-                    <option value="200">200 miles</option>
-                </select>
-            <li>
-            <li>
-                <button class="btn">Search</button>
-            </li>
-        </ul>
-        <div class="clearfix"></div>
-    </form>
-
-    <dl>
-        <dt>Title:</dt>
-        <dd>description of title</dd>
-
-        <dt>Title:</dt>
-        <dd>description of title</dd>
-    </dl>
+			                <dt>Channel:</dt>
+			                <dd>34</dd>
+			            </dl>
+					    <dl>
+					        <dt>Address:</dt>
+					        <dd>
+					        	<address class="vcard">
+					                <span class="adr">
+					                    <span class="street-address">759 N. 19th Street</span>
+					                    <span class="locality">Milwaukee</span>,
+					                    <span class="region" title="Wisconsin">WI</span>
+					                    <span class="postal-code">52333</span>
+					                </span>
+					            </address>
+					        </dd>
+					    </dl>
+			        </li>
+			    </ul>
+    		</div>
+    	</div>
+    	<div class="col-md-6">
+    		<h3>Methodology</h3>
+    		<p>Paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus purus in gravida rutrum. Aliquam erat volutpat. Nunc egestas iaculis varius. Aliquam tristique risus at lorem varius, vitae malesuada purus tincidunt. Duis vel libero eget dolor auctor dictum. Cras sed leo libero. Sed dictum sapien mauris, in viverra quam aliquet gravida.</p>
+    		<a href="#" class="more">Read more</a>
+    	</div>
+    </div>
 
 
 {% endblock %}
 
 {% block sidebar %}
     <p>Sidebar (.sidebar)</p>
-    <div class='boxCallout resources'>
+    <div class='box-callout resources'>
            <h3>Resources</h3>
            <ul class='bulletList unstyled'>
                <li>

@@ -48,31 +48,37 @@
             {% endblock %}
         </div>
 
-{% block footer %}
-        <div class="sf-footerWrapper">
-            <div class="sf-footer container">
-                <div class="row">
-                    <div class="span6 signup span-divider">
-                        <h4>Like this Project and Want to Discover Others Like It?</h4>
-                        <span class="tip">Join the Sunlight Foundation's open government community to learn more</span>
-                        <form action="/subscribe/" method="post" id="sfapp-subscribe-form" class="form-inline">
-                            {% csrf_token %}
-                            <input type="hidden" name="response" value="json">
-                            <input type="text" name="email" placeholder="your email address">
-                            <input type="text" name="zipcode" placeholder="your zip code">
-                            <button type="submit" class="btn btn-sunlight">Sign Up</button>
-                        </form>
-                    </div>
-                    <div class="span6 terms">
-                        <p>Our <a href="http://sunlightfoundation.com/legal/privacy/">privacy policy</a> details how personally identifiable information that is collected on our web sites is handled. Read our <a href="http://sunlightfoundation.com/legal/terms/">terms of service</a>.</p>
-                        <p>This work by <a href="http://sunlightfoundation.com">Sunlight Foundation</a>, unless <a href="http://sunlightfoundation.com/colophon/">otherwise noted</a>, is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons Attribution 3.0 United States License</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-{% endblock %}
+		{% block footer %}
+			<footer>
+	            <div class="sf-footer container">
+	                <div class="row">
+	                    <div class="col-md-7 span-divider">
+	                        <h4>Like this Project and Want to Discover Others Like It?</h4>
+	                        <span class="tip">Join the Sunlight Foundation's open government community to learn more</span>
+	                        <form role="form" class="form-inline" action="/subscribe/" method="post" id="sfapp-subscribe-form">
+	                            {% csrf_token %}
+	                            <input type="hidden" name="response" value="json">
+	                            <div class="form-group">
+									<label class="sr-only" for="sfapp-subscribe-email">Email address</label>
+									<input class="form-control" type="email" name="email" id="sfapp-subscribe-email" placeholder="Your email address">
+								</div>
+								<div class="form-group">
+									<label class="sr-only" for="sfapp-subscribe-zip">Email address</label>
+									<input class="form-control" type="text" name="zipcode" id="sfapp-subscribe-zip" placeholder="ZIP code">
+								</div>
+	                            <button type="submit" class="btn btn-sunlight">Sign Up</button>
+	                        </form>
+	                    </div>
+	                    <div class="col-md-5 terms">
+	                        <p>Our <a href="http://sunlightfoundation.com/legal/privacy/">privacy policy</a> details how personally identifiable information that is collected on our web sites is handled. Read our <a href="http://sunlightfoundation.com/legal/terms/">terms of service</a>.</p>
+	                        <p>This work by <a href="http://sunlightfoundation.com">Sunlight Foundation</a>, unless <a href="http://sunlightfoundation.com/colophon/">otherwise noted</a>, is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons Attribution 3.0 United States License</a>.</p>
+	                    </div>
+	                </div>
+	            </div>
+	        </footer>
+		{% endblock %}
 
-        <script src="{% static 'sfapp/js/jquery-1.8.3.min.js' %}"></script>
+        <script src="{% static 'sfapp/js/jquery-1.10.2.min.js' %}"></script>
         <script src="{% static 'sfapp/js/bootstrap.min.js' %}"></script>
         <script src="{% static 'sfapp/js/sfapp.js' %}"></script>
         {% block js %}{% endblock %}
