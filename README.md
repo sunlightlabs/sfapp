@@ -1,16 +1,12 @@
 # Sunlight Foundation mini-app wrapper
 
-A Flask blueprint is in the works.
+Templates and helpers for Django and Flask. Built on Bootstrap 3.
 
-## Django
+A demo application that displays default styles can be run with `python demo_flask.py` for Flask or `python demo_django.py` for Django.
 
-Requires Django >= 1.4
+## Configuration
 
-A demo application that displays default styles can be run by:
-
-    python demo.py
-
-### Configuration
+### Django
 
 settings.py:
 
@@ -20,7 +16,6 @@ settings.py:
         ...
     )
 
-
 urls.py:
 
     urlpatterns = patterns('',
@@ -29,13 +24,20 @@ urls.py:
         ...
     )
 
-### Templates
+### Flask
 
-To use the provided mini-app templates, extend `sfapp/base-full.html` or `sfapp/base-sidebar.html`.
+In your app:
 
-If the full and sidebar templates do not meet your needs, you can implement your own `sfapp/base-full.html` or `sfapp/base-sidebar.html` within your project. Make sure that your custom versions both extend `sfapp/base.html`.
+    from sfapp.blueprint import sfapp
+    app.register_blueprint(sfapp)
 
-#### Blocks
+## Templates
+
+To use the provided mini-app templates, extend `sfapp/<framework>/base-full.html` or `sfapp/<framework>/base-sidebar.html`. `<framework>` must be one of `django` or `flask`.
+
+If the full and sidebar templates do not meet your needs, you can implement your own `sfapp/<framework>/base-full.html` or `sfapp/<framework>/base-sidebar.html` within your project. Make sure that your custom versions both extend `sfapp/<framework>/base.html`.
+
+### Blocks
 
 The following blocks are provided by the base templates:
 
@@ -43,10 +45,10 @@ container
 :    A generic container that holds the content block and, if using the sidebar template, the sidebar block.
 
 content
-:    The block that contains your main content. Uses full page width when extending `sfapp/base-full.html`.
+:    The block that contains your main content. Uses full page width when extending `sfapp/<framework>/base-full.html`.
 
 sidebar
-:    A right-aligned sidebar block is available when extending `sfapp/base-sidebar.html`. To customize the placement or width of this block, implement a custom `sfapp/base-sidebar.html`.
+:    A right-aligned sidebar block is available when extending `sfapp/<framework>/base-sidebar.html`. To customize the placement or width of this block, implement a custom `sfapp/<framework>/base-sidebar.html`.
 
 title
 :    Title of the page
@@ -69,19 +71,20 @@ ga
 bodyclass
 :    The content of the class attribute on the body element.
 
-### Mailing List Signup Form
+## Mailing List Signup Form
 
-By default, the form will be submitted to the Sunlight Foundation generic mailing list. To use an app-specific mailing list, set `BSD_URL` in `settings.py`.
+The provided base template includes JavaScript that will do a fancy Ajax form submission and attempt to subscribe to the Sunlight Foundation mailing list. The route is mounted at */subscribe*.
 
-    BSD_URL = "http://bsd.sunlightfoundation.com/page/signup/Public_Markup"
+Subscriptions for both frameworks are handled by the *sfapp.mailinglist* module. *subscribe(email, zipcode, source=None)* is the method that will invoke the subscription endpoint and return the response.
+
+### Django
 
 `sfapp.urls` contains a URL config that will handle form submissions to `/subscribe/`. You can use a different URL by overriding the URL config in your own `urls.py`. You can also customize the view by inheriting `SubscribeView`:
 
     from sfapp.views import SubscribeView
 
     class MySubscribeView(SubscribeView):
-        bsd_url = "http://bsd.sunlightfoundation.com/page/signup/Public_Markup"
-        success_message = "High five! You've been registered."
+        pass # do something here
 
     urlpatterns = patterns('',
         ...
@@ -89,12 +92,6 @@ By default, the form will be submitted to the Sunlight Foundation generic mailin
         ...
     )
 
-The following attributes are available on `SubscribeView`:
+### Flask
 
-bsd_url
-:    Defaults to `settings.BSD_URL` or the default Sunlight Foundation mailing list
-
-success_message
-:    The message that will be displayed to the user on successful registration
-
-The provided base template includes JavaScript that will do a fancy Ajax form submission.
+No customizations yet.

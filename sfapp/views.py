@@ -7,10 +7,9 @@ from django.contrib import messages
 from django.http import HttpResponse, HttpResponseNotAllowed, HttpResponseRedirect
 from django.views.generic import View
 
-class SubscribeView(View):
+from sfapp import mailinglist
 
-    bsd_url = getattr(settings, 'BSD_URL', 'http://bsd.sunlightfoundation.com/page/s/sfc')
-    success_message = 'Thanks for registering!'
+class SubscribeView(View):
 
     def get(self, request, *args, **kwargs):
         return HttpResponseNotAllowed(('POST',))
@@ -22,16 +21,13 @@ class SubscribeView(View):
 
         if email:
 
-            self.bsd_url += "?source=%s" % request.build_absolute_uri()
-
-            params = {"email": email, "zip": zipcode}
-            response = urllib2.urlopen(self.bsd_url, urllib.urlencode(params)).read()
+            response = mailinglist.subscribe(email, zipcode)
 
         if request.is_ajax():
-            resp = {'message': self.success_message}
+            resp = {'message': mailinglist.SUCCESS_MESSAGE}
             return HttpResponse(json.dumps(resp), content_type='application/json')
 
-        messages.success(request, self.success_message)
+        messages.success(request, mailinglist.SUCCESS_MESSAGE)
         referrer = request.META.get('HTTP_REFERER', None)
 
         return HttpResponseRedirect(referrer or '/')
