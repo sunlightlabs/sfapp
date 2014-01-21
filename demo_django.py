@@ -18,7 +18,7 @@ except IndexError:
 
 def index(request):
     from django.shortcuts import render
-    return render(request, 'sfapp/_demo.html')
+    return render(request, 'sfapp/django/_demo.html')
 
 urlpatterns = patterns('',
     (r'^$', index),
@@ -44,7 +44,7 @@ class DemoSettings(object):
         'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     )
 
-    ROOT_URLCONF = 'demo'
+    ROOT_URLCONF = 'demo_django'
 
     def __getattr__(self, name):
         return getattr(global_settings, name)
