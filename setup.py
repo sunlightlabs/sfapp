@@ -21,7 +21,7 @@ setup(
             'static/*/css/*',
             'static/*/js/*',
             'static/*/img/*',
-            'templates/*/*',
+            'templates/*/*/*',
         ]
     },
     license='BSD License',
