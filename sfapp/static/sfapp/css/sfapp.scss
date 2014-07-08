@@ -1,7 +1,22 @@
+// Branding Bar styles
 
-/*
- * base element styles
- */
+.branding-bar {
+    padding: 12px 20px 0;
+    height: 57px !important;
+    margin-bottom: 50px;
+}
+
+.branding-bar_container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.bb_wrapper .bb_about {
+    box-sizing: content-box;
+}
+
+// Base element styles
+
 
 body {
     background: url(../img/sfapp_bg.jpg) center 48px repeat-x #FFFFFF;
@@ -30,22 +45,21 @@ legend { padding-bottom: 5px; font-size: 115%; font-weight: bold; margin-bottom:
 
 input, button, select, textarea { font-family: "Georgia", "Times New Roman", "Times", serif; }
 
-/*
- * utilities
- */
+// Utilities
+
 
 .clear { clear: both; }
 .hidden { display: none; }
 
 
-/*
- * override bootstrap styles
- */
+
+ // Override bootstrap styles
+
 
 .well { background-color: #eeebe1; }
 ::selection { background:#CA5703; color:#fff; text-shadow: none; }
 
-/* Fix for Google Maps image elements */
+// Fix for Google Maps image elements
 .gmnoprint img, .gmnocsreen img {
      max-width: none;
 }
@@ -139,9 +153,7 @@ ul.nav {
 
 .nav-pills > li > a { padding: 0;}
 
-/*
- * wrapper-specific styles
- */
+// Wrapper-specific styles
 
 h1, h2, h3, h4, legend { font-weight: normal; color: #635f5c; max-width: 680px;}
 h1 { font-family: Georgia, 'Times New Roman', Times, serif; font-size: 270%; line-height: 40px; margin-bottom: 30px;}
@@ -264,8 +276,7 @@ footer {
         margin-bottom: 0.5em;
     }
     .span-divider {
-        border-right: 1px dashed #e8e6de;
-        margin-right: -1px;
+        border-bottom: 1px dashed #e8e6de;
     }
     .terms {
         padding-top: 35px;
@@ -277,4 +288,15 @@ footer {
         }
     }
     .tip { color: #9f9a97; }
+}
+
+// Media queries
+
+@media (min-width: 992px) {
+    footer {
+        .span-divider {
+            border-bottom: 0;
+            border-right: 1px dashed #e8e6de;
+        }
+    }
 }

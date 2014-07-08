@@ -1,6 +1,18 @@
-/*
- * base element styles
- */
+.branding-bar {
+    padding: 12px 20px 0;
+    height: 57px !important;
+    margin-bottom: 50px;
+}
+
+.branding-bar_container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.bb_wrapper .bb_about {
+    box-sizing: content-box;
+}
+
 body {
   background: url(../img/sfapp_bg.jpg) center 48px repeat-x white;
   color: #3B3633;
@@ -41,18 +53,12 @@ legend {
 input, button, select, textarea {
   font-family: "Georgia", "Times New Roman", "Times", serif; }
 
-/*
- * utilities
- */
 .clear {
   clear: both; }
 
 .hidden {
   display: none; }
 
-/*
- * override bootstrap styles
- */
 .well {
   background-color: #eeebe1; }
 
@@ -61,7 +67,6 @@ input, button, select, textarea {
   color: #fff;
   text-shadow: none; }
 
-/* Fix for Google Maps image elements */
 .gmnoprint img, .gmnocsreen img {
   max-width: none; }
 
@@ -152,9 +157,6 @@ ul.nav {
 .nav-pills > li > a {
   padding: 0; }
 
-/*
- * wrapper-specific styles
- */
 h1, h2, h3, h4, legend {
   font-weight: normal;
   color: #635f5c;
@@ -333,8 +335,7 @@ footer {
     color: #9f9a97;
     margin-bottom: 0.5em; }
   footer .span-divider {
-    border-right: 1px dashed #e8e6de;
-    margin-right: -1px; }
+    border-bottom: 1px dashed #e8e6de; }
   footer .terms {
     padding-top: 35px; }
     footer .terms p {
@@ -344,3 +345,8 @@ footer {
       line-height: 18px; }
   footer .tip {
     color: #9f9a97; }
+
+@media (min-width: 992px) {
+  footer .span-divider {
+    border-bottom: 0;
+    border-right: 1px dashed #e8e6de; } }
