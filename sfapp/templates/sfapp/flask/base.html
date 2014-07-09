@@ -10,8 +10,12 @@
 
         <link rel="stylesheet" href="{{ url_for('sfapp.static', filename='sfapp/css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ url_for('sfapp.static', filename='sfapp/css/sfapp.css') }}">
-        <link rel="stylesheet" href="https://sunlight-cdn.s3.amazonaws.com/brandingbar/0.3/css/brandingbar.css">
-        <link rel="stylesheet" href="https://sunlight-cdn.s3.amazonaws.com/sf-icons/0.2/css/sf-icons.css">
+
+        {% set brandingbar_version = "0.3" %}
+        {% set sficons_version = "0.2" %}
+        <link rel="stylesheet" href="https://sunlight-cdn.s3.amazonaws.com/brandingbar/{{brandingbar_version}}/css/brandingbar.css">
+        <link rel="stylesheet" href="https://sunlight-cdn.s3.amazonaws.com/sf-icons/{{sficons_version}}/css/sf-icons.css">
+
         {% block css %}{% endblock %}
 
         <script type="text/javascript" src="//use.typekit.com/tab6neo.js"></script>
@@ -71,9 +75,9 @@
         <script src="{{ url_for('sfapp.static', filename='sfapp/js/jquery-1.10.2.min.js') }}"></script>
         <script src="{{ url_for('sfapp.static', filename='sfapp/js/bootstrap.min.js') }}"></script>
         <script src="{{ url_for('sfapp.static', filename='sfapp/js/sfapp.js') }}"></script>
-        <script src="https://sunlight-cdn.s3.amazonaws.com/brandingbar/0.3/js/brandingbar.min.js.gz"></script>
+        <script src="https://sunlight-cdn.s3.amazonaws.com/brandingbar/{{brandingbar_version}}/js/brandingbar.min.js.gz"></script>
         <!--[if IE 8]>
-            <script src="https://sunlight-cdn.s3.amazonaws.com/sf-icons/0.2/js/sf-icons.js"></script>
+            <script src="https://sunlight-cdn.s3.amazonaws.com/sf-icons/{(sficons_version}}/js/sf-icons.js"></script>
         <![endif]-->
         {% block js %}{% endblock %}
 
